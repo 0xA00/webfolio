@@ -5,7 +5,7 @@ import AboutView from "../views/AboutView.vue";
 
 const routes = [
   {
-    path: '/',
+    path: '/about',
     name: 'about',
     component: AboutView,
     meta: {
