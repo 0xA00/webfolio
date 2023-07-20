@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 
 import AboutView from "../views/AboutView.vue";
+import Error404 from "../views/Error404.vue";
 
 const routes = [
   {
@@ -11,6 +12,11 @@ const routes = [
     meta: {
         title: 'About'
     }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'error404',
+    component: Error404
   }
 ]
 
