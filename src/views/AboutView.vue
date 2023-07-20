@@ -1,5 +1,96 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <img alt="Profile Picture" src="../assets/reiLongHair.png">
+    <h1>Hi I'm 0xa0 ! 🏳️‍⚧<span id="pronouns">She/Her</span></h1>
+
+    <p>I'm a 20 years old french student in computer science. I'm currently studying at <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a> in Montpellier.</p>
+
+    <p>I'm passionate about computer science, especially about low-level programming and security. I'm also interested in web development and I'm currently learning Vue.js and Rust.</p>
+
+    <h2> Hobbies :</h2>
+    <ul>
+      <li>Programming</li>
+      <li>Video games</li>
+      <li>Music</li>
+      <li>Reading</li>
+    </ul>
+
+
+    <h2>Available social medias :</h2>
+
+    <a class="ICONS" href="http://twitter.com/0xa0_" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+    <a class="ICONS" href="=https://steamcommunity.com/id/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-steam" /></a>
+    <a class="ICONS" href="https://github.com/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
+    <a class="ICONS" href="" ><font-awesome-icon icon="fa-brands fa-discord"/></a>
+
+
+
+
+
+
   </div>
+
+
 </template>
+
+<style>
+
+.about {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #b2beb5;
+
+}
+
+#pronouns {
+  font-size: 0.5em;
+  color: #42b983;
+}
+
+.ICONS {
+  font-size: 2em;
+  color: #42b983;
+  margin-right: 10px;
+}
+
+.about ul {
+  list-style: none;
+}
+.about ul li:before {
+  content: "-";
+  color: #42b983;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.about a {
+  color: #42b983;
+  text-decoration: none;
+}
+
+.about a:hover {
+  color: #66c2a4;
+  text-decoration: underline;
+}
+
+
+.about h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #b2beb5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about img {
+  border-radius: 20%;
+  width: 250px;
+  height: 250px;
+}
+</style>
+<script setup>
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+</script>
+
