@@ -12,5 +12,6 @@
 <style scoped>
 h1, p {
   color: #42b983;
+  text-align: center;
 }
 </style>
