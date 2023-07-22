@@ -11,8 +11,8 @@
     <span class="ICONS"><font-awesome-icon icon="fa-brands fa-java" /></span>
     <span class="ICONS"><font-awesome-icon icon="fa-brands fa-python" /></span>
     <span class="ICONS"><font-awesome-icon icon="fa-brands fa-js" /></span>
-    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-unity" /></span>
-    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-Vuejs" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-solid fa-c" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-vuejs" /></span>
 
 
 

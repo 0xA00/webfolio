@@ -11,10 +11,10 @@ import {faDiscord} from "@fortawesome/free-brands-svg-icons";
 import {faJava} from "@fortawesome/free-brands-svg-icons";
 import {faPython} from "@fortawesome/free-brands-svg-icons";
 import {faJs} from "@fortawesome/free-brands-svg-icons";
-import {faUnity} from "@fortawesome/free-brands-svg-icons";
 import {faVuejs} from "@fortawesome/free-brands-svg-icons";
+import {faC} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTwitter, faGithub, faSteam, faDiscord, faJava, faPython, faJs, faUnity, faVuejs)
+library.add(faTwitter, faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC)
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
