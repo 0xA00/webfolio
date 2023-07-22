@@ -6,7 +6,7 @@ import Error404 from "../views/Error404.vue";
 
 const routes = [
   {
-    path: '/about',
+    path: '/about'||'/',
     name: 'about',
     component: AboutView,
     meta: {
@@ -21,14 +21,6 @@ const routes = [
         title: 'Error 404'
     }
   },
-  {
-    path: '/',
-    name: 'about',
-    component: AboutView,
-    meta: {
-        title: 'About'
-    }
-  }
 ]
 
 const router = createRouter({
