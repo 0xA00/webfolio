@@ -7,13 +7,14 @@
 
     <p>I'm passionate about computer science, especially about low-level programming and security. I'm also interested in web development and I'm currently learning Vue.js and Rust.</p>
 
-    <h2> Hobbies :</h2>
-    <ul>
-      <li>Programming</li>
-      <li>Video games</li>
-      <li>Music</li>
-      <li>Reading</li>
-    </ul>
+    <h2> languages learned :</h2>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-java" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-python" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-js" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-unity" /></span>
+    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-Vuejs" /></span>
+
+
 
 
     <h2>Available social medias :</h2>
