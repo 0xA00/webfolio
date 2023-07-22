@@ -16,7 +16,18 @@ const routes = [
   {
     path: '/:pathMatch(.*)*',
     name: 'error404',
-    component: Error404
+    component: Error404,
+    meta: {
+        title: 'Error 404'
+    }
+  },
+  {
+    path: '/',
+    name: 'about',
+    component: AboutView,
+    meta: {
+        title: 'About'
+    }
   }
 ]
 
