@@ -3,10 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import AboutView from "../views/AboutView.vue";
 import Error404 from "../views/Error404.vue";
+import HomeView from "../views/HomeView.vue";
 
 const routes = [
   {
-    path: '/about'||'/',
+    path: '/about',
     name: 'about',
     component: AboutView,
     meta: {
@@ -21,6 +22,15 @@ const routes = [
         title: 'Error 404'
     }
   },
+    {
+        path: '/',
+        name: 'home',
+        component: HomeView,
+        meta: {
+            title: 'Home'
+        }
+
+    }
 ]
 
 const router = createRouter({
