@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img alt="Profile Picture" src="../assets/IMG_7569.JPG">
+    <img alt="Profile Picture" src="../assets/dommer.png">
     <h1>Hi I'm 0xa0 !</h1>
 
     <p>I'm a 20 years old french student in computer science. I'm currently studying at <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a> in Montpellier.</p>
@@ -19,7 +19,7 @@
 
     <h2>Available social medias :</h2>
 
-    <a class="ICONS" href="http://twitter.com/0xa0_" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+    <a class="ICONS" href="https://twitter.com/0xa0_" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
     <a class="ICONS" href="=https://steamcommunity.com/id/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-steam" /></a>
     <a class="ICONS" href="https://github.com/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
     <a class="ICONS" href="" ><font-awesome-icon icon="fa-brands fa-discord"/></a>
