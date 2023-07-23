@@ -6,7 +6,7 @@
   <div>
     <h1>Home</h1>
     <p>Home page content goes here.</p>
-    <p> NOT FINISHED , WIP</p>
+    <p> NOT FINISHED YET, WIP</p>
   </div>
 </template>
 
