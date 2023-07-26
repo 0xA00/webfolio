@@ -27,6 +27,23 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+h1 {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #42b983;
+
+}
+a {
+    color: #42b983;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66c2a4;
+    text-decoration: underline;
+}
 </style>
 
 <script setup>

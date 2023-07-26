@@ -11,6 +11,9 @@
 
 <style scoped>
 h1, p {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   color: #42b983;
   text-align: center;
 }

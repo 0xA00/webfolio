@@ -66,15 +66,6 @@
   margin-left: -1em;
 }
 
-.about a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.about a:hover {
-  color: #66c2a4;
-  text-decoration: underline;
-}
 
 
 .about h1 {

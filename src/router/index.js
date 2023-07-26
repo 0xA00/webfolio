@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from "../views/AboutView.vue";
 import Error404 from "../views/Error404.vue";
 import HomeView from "../views/HomeView.vue";
+import BlogView from "../views/BlogGeneralView.vue";
 
 const routes = [
   {
@@ -28,6 +29,15 @@ const routes = [
         component: HomeView,
         meta: {
             title: 'Home'
+        }
+    }
+    ,
+    {
+        path: '/blog',
+        name: 'blog',
+        component: BlogView,
+        meta: {
+            title: 'Blog'
         }
     }
 ]
