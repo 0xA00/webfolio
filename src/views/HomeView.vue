@@ -17,4 +17,8 @@ h1, p {
     -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
+p{
+    color: #42b983;
+}
 </style>
