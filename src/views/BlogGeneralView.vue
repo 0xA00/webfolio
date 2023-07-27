@@ -11,17 +11,11 @@
 
 <script>
 
+const response = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
 
-async function getPost() {
-  const response = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
-    return await response.text()
-}
+const data = response
+console.log(data)
 
-const posttest = getPost()
-const test = document.getElementById('test')
-test.innerHTML = posttest.then((data) => {
-  return data
-})
 
 
 </script>
