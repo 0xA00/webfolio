@@ -4,27 +4,18 @@
 
 
 
-    <p id="test">There are no posts yet.</p>
+   <SlugBlog Pathjson="friede" />
 
 
 </template>
 
 <script>
+import SlugBlog from "@/views/SlugBlog.vue";
+import {defineComponent} from "vue";
 
-
-const response =  fetch('https://vercelapi-0xa00.vercel.app/json/friede/post.json')
-  .then(response => response.text())
-// then add it to the DOM with then
-  .then(text => console.log(text));
-
-
-
-
-
-
-
-
-
+export default defineComponent({
+    components: {SlugBlog}
+})
 
 
 </script>
