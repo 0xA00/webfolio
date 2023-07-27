@@ -11,7 +11,7 @@
 
 <script>
 
-const posttest = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
+const posttest = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
 
 const test = document.getElementById('test')
 test.innerHTML = posttest
