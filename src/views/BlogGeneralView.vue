@@ -4,7 +4,7 @@
 
 
 
-    <p>There are no posts yet.</p>
+    <p id="test">There are no posts yet.</p>
 
 
 </template>
@@ -12,8 +12,14 @@
 <script>
 
 const posttest = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
-  .then(response => response.text())
-  .then(text => console.log(text))
+
+var responsetext = posttest.text()
+
+document.getElementById("test").innerHTML = responsetext
+
+
+
+
 
 </script>
 
