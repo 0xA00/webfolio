@@ -13,7 +13,9 @@
 
 const response = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
     .then(response => response.text())
-    .finally(text => document.getElementById("test").innerHTML = text)
+    .finally(text => {
+        document.getElementById("test").innerHTML = text;
+    });
 
 
 
