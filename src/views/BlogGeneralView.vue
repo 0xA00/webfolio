@@ -12,7 +12,7 @@
 
 var datsas;
 
-const response =  fetch(`https://vercelapi-0xa00.vercel.app/json/`${Pathjson}`/post.json`)
+const response =  fetch(`https://vercelapi-0xa00.vercel.app/json/friede/post.json`)
     .then(response => response.json())
     //then set the variable to the response
     .then(datsa => datsas = datsa)
