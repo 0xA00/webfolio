@@ -14,11 +14,10 @@
 
 async function getPost() {
   const response = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
-  const data = await response.text()
-  return data
+    return await response.text()
 }
 
-const posttest = await getPost()
+const posttest = getPost()
 const test = document.getElementById('test')
 test.innerHTML = posttest.text()
 
