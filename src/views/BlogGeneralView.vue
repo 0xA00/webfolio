@@ -12,7 +12,7 @@
 <script>
 
 //require node-fetch
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 const response = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
   .then(response => response.text())
