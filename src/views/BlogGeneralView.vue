@@ -11,11 +11,12 @@
 
 <script>
 
-const response = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
+const response =  fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
   .then(response => response.text())
   .then(text => console.log(text))
-// then add it to the DOM:
-document.getElementById("test").innerHTML = response;
+// then add it to the DOM with then
+.then(text => document.getElementById("test").innerHTML = text)
+
 
 
 
