@@ -10,13 +10,13 @@
 </template>
 
 <script>
-var content = null;
+
 
 const response =  fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
   .then(response => response.text())
 // then add it to the DOM with then
-  .then(text => content = text)
-    .then(console.log(content))
+  .then(console.log(response));
+
 
 
 
