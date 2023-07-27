@@ -11,8 +11,13 @@
 
 <script>
 
+const posttest = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
+  .then(response => response.text())
+  .then(text => console.log(text))
+
 </script>
 
 <style scoped>
+
 
 </style>
