@@ -19,7 +19,9 @@ async function getPost() {
 
 const posttest = getPost()
 const test = document.getElementById('test')
-test.innerHTML = posttest.text()
+test.innerHTML = posttest.then((data) => {
+  return data
+})
 
 
 </script>
