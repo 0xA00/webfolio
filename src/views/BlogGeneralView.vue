@@ -4,19 +4,21 @@
 
 
 
-   <SlugBlog Pathjson="friede" />
 
 
 </template>
 
 <script>
-import SlugBlog from "@/views/SlugBlog.vue";
-import {defineComponent} from "vue";
 
-export default defineComponent({
-    components: {SlugBlog}
-})
+var datsas;
 
+const response =  fetch(`https://vercelapi-0xa00.vercel.app/json/`${Pathjson}`/post.json`)
+    .then(response => response.json())
+    //then set the variable to the response
+    .then(datsa => datsas = datsa)
+    .then(datsa => console.log(datsa));
+
+console.log(datsas);
 
 </script>
 
