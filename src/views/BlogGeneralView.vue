@@ -13,8 +13,8 @@
 
 const posttest = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
 
-const post = await posttest.then((res) => res.text())
-document.getElementById("test").innerHTML = post
+const test = document.getElementById('test')
+test.innerHTML = posttest
 
 
 </script>
