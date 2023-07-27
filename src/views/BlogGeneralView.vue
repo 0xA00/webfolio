@@ -11,7 +11,10 @@
 
 <script>
 
-const response = fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
+//require node-fetch
+const fetch = require('node-fetch');
+
+const response = await fetch('https://vercelapi-0xa00.vercel.app/blog/friede/index.md')
   .then(response => response.text())
   .then(text => console.log(text))
 // then add it to the DOM:
