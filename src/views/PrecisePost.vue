@@ -15,7 +15,9 @@ import {ref} from 'vue'
 
 let content= ""
 let datsas;
-const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+`/index.md`)
+let $route = defineProps(['params']);
+let title = $route.params.id
+const response = await fetch(`https://0xa0.dev/blog/`+title+`/index.md`)
 
 datsas = await response.text()
 
