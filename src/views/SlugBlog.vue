@@ -1,7 +1,11 @@
 <template>
   <div>
-      <h2>{{ datsas.title }}</h2>
-      <h3>{{ datsas.date }}</h3>
+      <router-link to="/" v-slot="{ href, route, navigate }">
+          <a :href="href" @click="navigate">
+              <h2 id="title">{{title}}</h2>
+              <h3 id="date">{{date}}</h3>
+          </a>
+      </router-link>
   </div>
 
 </template>
@@ -9,19 +13,64 @@
 <script setup>
 import {ref} from 'vue'
 
-defineProps(['Pathjson'])
+const slug = defineProps(['Pathjson'])
+let title= ""
+let date= ""
 
 let datsas;
-const response =  fetch(`https://vercelapi-0xa00.vercel.app/json/`${Pathjson}`/post.json`)
-  .then(response => response.json())
-//then set the variable to the response
-  .then(datsa => datsas = datsa)
-  .then(datsa => console.log(datsa));
+
+const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/`+slug.Pathjson+`/post.json`)
+datsas = await response.json()
+
+
+//wait for the script to be loaded to update the title and date
+await new Promise(resolve => {
+    setTimeout(() => {
+        title = datsas.title
+        date = datsas.date
+        resolve()
+    }, 1000)
+})
 
 
 
 </script>
 
 <style scoped>
+
+a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+h2{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #42b983;
+}
+
+h3{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #b2beb5;
+  font-size: 1em;
+  margin-top: -15px;
+}
+
+
+
 
 </style>

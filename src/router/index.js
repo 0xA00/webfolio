@@ -5,6 +5,7 @@ import AboutView from "../views/AboutView.vue";
 import Error404 from "../views/Error404.vue";
 import HomeView from "../views/HomeView.vue";
 import BlogView from "../views/BlogGeneralView.vue";
+import PrecisePost from "../views/PrecisePost.vue";
 
 const routes = [
   {
@@ -33,9 +34,18 @@ const routes = [
     }
     ,
     {
-        path: '/blog',
-        name: 'blog',
+        path: '/blogs',
+        name: 'blogs',
         component: BlogView,
+        meta: {
+            title: 'Blogs'
+        }
+    }
+    ,
+    {
+        path: '/blog/:id',
+        name: 'blog',
+        component: PrecisePost,
         meta: {
             title: 'Blog'
         }

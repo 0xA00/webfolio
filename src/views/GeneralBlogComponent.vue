@@ -1,0 +1,51 @@
+<template>
+  <div id="BlogPosts">
+
+    <div v-for="(post) in nbOfPosts" :key="post">
+        <SlugBlog :Pathjson="post"></SlugBlog>
+
+  </div>
+  </div>
+
+</template>
+
+<script>
+
+
+import SlugBlog from "@/views/SlugBlog.vue";
+
+//get blogs.json in order to get the number of posts
+let nbOfPosts = []
+const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/blogJson/blogs.json`)
+nbOfPosts = await response.json()
+let nbOfPostsLength = nbOfPosts.length
+// put each post individually in an array and remove the [" and "] from each post
+
+nbOfPosts = nbOfPosts.posts
+
+console.log(nbOfPosts)
+
+
+
+
+
+
+export default {
+    components: {SlugBlog},
+    data() {
+        return {
+            nbOfPosts: nbOfPosts,
+            nbOfPostsLength: nbOfPostsLength
+        }
+    }
+}
+
+</script>
+
+<style scoped>
+
+#BlogPosts{
+    margin-left: 2%;
+}
+
+</style>

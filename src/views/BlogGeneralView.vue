@@ -1,28 +1,33 @@
 <template>
 
   <h1>Blog</h1>
+    <suspense>
+        <template #fallback>
 
-
-
-
+        </template>
+        <GeneralBlogComponent></GeneralBlogComponent>
+    </suspense>
 
 </template>
 
 <script>
 
-var datsas;
 
-const response =  fetch(`https://vercelapi-0xa00.vercel.app/json/friede/post.json`)
-    .then(response => response.json())
-    //then set the variable to the response
-    .then(datsa => datsas = datsa)
-    .then(datsa => console.log(datsa));
 
-console.log(datsas);
+import {defineComponent} from "vue";
+import GeneralBlogComponent from "@/views/GeneralBlogComponent.vue";
 
+export default defineComponent({
+    components: {GeneralBlogComponent}
+})
 </script>
 
 <style scoped>
 
 
+h1{
+    font-size: 3em;
+
+    margin-top: 10px;
+}
 </style>
