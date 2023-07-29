@@ -2,20 +2,23 @@
 <div id="POST">
     <h2 id="title">{{$route.params.id}}</h2>
 
-    <div id="content">
-        <div v-html="content"></div>
+    <div id="contents">
+        {{content}}
+
     </div>
 
 </div>
 </template>
 
-<script>
+<script setup>
 
-import {ref} from 'vue'
+
+import {useRoute} from "vue-router";
 
 let content= ""
 let datsas;
-let title = this.$route.params.id
+const route = useRoute()
+let title = route.params.id
 const response = await fetch(`https://0xa0.dev/blog/`+title+`/index.md`)
 
 datsas = await response.text()

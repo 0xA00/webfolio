@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
 
 const slug = defineProps(['Pathjson'])
 let title= ""
