@@ -1,6 +1,6 @@
 <template>
   <div>
-      <router-link to="/" v-slot="{ href, route, navigate }">
+      <router-link :to="{path:'/blog/'+slug.Pathjson}" v-slot="{ href, route, navigate }">
           <a :href="href" @click="navigate">
               <h2 id="title">{{title}}</h2>
               <h3 id="date">{{date}}</h3>
@@ -17,7 +17,12 @@ const slug = defineProps(['Pathjson'])
 let title= ""
 let date= ""
 
+
 let datsas;
+
+const test = await fetch('https://0xa0.dev/blog/friede/index.md')
+const text = await test.text()
+console.log(text)
 
 const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/`+slug.Pathjson+`/post.json`)
 datsas = await response.json()
