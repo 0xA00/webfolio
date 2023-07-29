@@ -1,6 +1,7 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{$route.params.id}}</h2>
+    <h2 id="title">{{title}}</h2>
+  <div id="content" v-html="content"></div>
 
 
 </div>
@@ -12,7 +13,24 @@
 import {useRoute} from "vue-router";
 
 let content= ""
+let title= ""
 let datsas;
+
+const route = useRoute()
+//fetch the json and index.md at the same time and wait for both to be loaded
+const response = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/post.json`)
+const response2 = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/index.md`)
+datsas = await response.json()
+content = await response2.text()
+
+
+await new Promise(resolve => {
+    setTimeout(() => {
+       title = datsas.title;
+        resolve()
+    }, 1000)
+})
+
 
 
 
@@ -20,4 +38,21 @@ let datsas;
 
 <style scoped>
 
+#POST{
+    margin-left: 2%;
+}
+
+h2{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #42b983;
+}
+
+#content{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+color:whitesmoke;
+}
 </style>
