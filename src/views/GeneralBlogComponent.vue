@@ -18,9 +18,9 @@ import SlugBlog from "@/views/SlugBlog.vue";
 let nbOfPosts = []
 const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
 nbOfPosts = await response.text()
+console.log(nbOfPosts)
 nbOfPosts = JSON.parse(nbOfPosts)
 nbOfPosts = nbOfPosts.posts
-console.log(nbOfPosts)
 
 
 
