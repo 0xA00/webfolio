@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{$route.params.id}}</h2>
+    <h2 id="title">{{title}}</h2>
 
 
 </div>
@@ -20,7 +20,12 @@ const response = await fetch(`https://0xa0.dev/blog/`+title+`/index.md`)
 datsas = await response.text()
 console.log(datsas)
 
-
+await new Promise(resolve => {
+    setTimeout(() => {
+        content = datsas
+        resolve()
+    }, 1000)
+})
 
 
 </script>
