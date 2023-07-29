@@ -19,10 +19,7 @@ let nbOfPosts = []
 const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
 nbOfPosts = await response.text()
 nbOfPosts = JSON.parse(nbOfPosts)
-let nbOfPostsLength = nbOfPosts.length
-
 nbOfPosts = nbOfPosts.posts
-
 console.log(nbOfPosts)
 
 
@@ -34,8 +31,7 @@ export default {
     components: {SlugBlog},
     data() {
         return {
-            nbOfPosts: nbOfPosts,
-            nbOfPostsLength: nbOfPostsLength
+            nbOfPosts: nbOfPosts
         }
     }
 }
