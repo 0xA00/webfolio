@@ -19,7 +19,6 @@ let nbOfPosts = []
 const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
 nbOfPosts = await response.json()
 let nbOfPostsLength = nbOfPosts.length
-
 nbOfPosts = nbOfPosts.posts
 
 

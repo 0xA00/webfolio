@@ -12,7 +12,7 @@
 
 import {useRoute} from "vue-router";
 
-let content= ""
+let content= "test"
 let title= ""
 let datsas;
 
