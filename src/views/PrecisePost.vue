@@ -11,6 +11,22 @@
 
 <script>
 
+import {ref} from 'vue'
+
+let content= ""
+let datsas;
+const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+`/index.md`)
+
+datsas = await response.text()
+
+await new Promise(resolve => {
+    setTimeout(() => {
+        content = datsas
+        resolve()
+    }, 1000)
+})
+
+
 </script>
 
 <style scoped>
