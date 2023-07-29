@@ -16,10 +16,9 @@ import SlugBlog from "@/views/SlugBlog.vue";
 
 //get blogs.json in order to get the number of posts
 let nbOfPosts = []
-const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/blogJson/blogs.json`)
+const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
 nbOfPosts = await response.json()
 let nbOfPostsLength = nbOfPosts.length
-// put each post individually in an array and remove the [" and "] from each post
 
 nbOfPosts = nbOfPosts.posts
 
