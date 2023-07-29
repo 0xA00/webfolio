@@ -20,11 +20,9 @@ let date= ""
 
 let datsas;
 
-const test = await fetch('https://0xa0.dev/blog/friede/index.md')
-const text = await test.text()
-console.log(text)
 
-const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/`+slug.Pathjson+`/post.json`)
+
+const response = await fetch(`https://0xa0.dev/blog`+slug.Pathjson+`/post.json`)
 datsas = await response.json()
 
 

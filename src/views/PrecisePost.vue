@@ -1,8 +1,11 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{title}}</h2>
-    <h3 id="date">{{date}}</h3>
-    <div id="content" v-html="content"></div>
+    <h2 id="title">{{$route.params.id}}</h2>
+
+    <div id="content">
+        <div v-html="content"></div>
+    </div>
+
 </div>
 </template>
 
