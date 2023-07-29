@@ -22,7 +22,6 @@ let nbOfPostsLength = nbOfPosts.length
 
 nbOfPosts = nbOfPosts.posts
 
-console.log(nbOfPosts)
 
 
 
