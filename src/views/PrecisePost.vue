@@ -19,9 +19,8 @@ let datsas;
 const route = useRoute()
 //fetch the json and index.md at the same time and wait for both to be loaded
 const response = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/post.json`)
-const response2 = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/index.md`)
 datsas = await response.json()
-content = await response2.text()
+
 
 
 await new Promise(resolve => {
