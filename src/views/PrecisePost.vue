@@ -1,7 +1,7 @@
 <template>
 <div id="POST">
     <h2 id="title">{{title}}</h2>
-  <div id="content" v-html="content"></div>
+
 
 
 </div>
@@ -12,7 +12,7 @@
 
 import {useRoute} from "vue-router";
 
-let content= "test"
+
 let title= ""
 let datsas;
 
@@ -27,7 +27,9 @@ console.log(datsas.title)
 
 await new Promise(resolve => {
     setTimeout(() => {
-       title = datsas.title;
+       //document with id title is updated
+      document.getElementById("title").innerHTML = datsas.title
+      title = datsas.title
         resolve()
     }, 1000)
 })
