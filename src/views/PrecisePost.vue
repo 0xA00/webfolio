@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 ref="titler"></h2>
+    <h2 :ref="titlepost"></h2>
 
 
 
@@ -8,7 +8,7 @@
 </div>
 </template>
 
-<script setup>
+<script>
 
 
 import {useRoute} from "vue-router";
@@ -26,10 +26,18 @@ datsas = await response.json()
 
 
 //get the ref for titler used in the template
-const titler = this.$ref["titler"].focus()
-//change the title
-titler.innerHTML = datsas.title
 
+export default{
+  data(){
+    return{
+      titlepost: ""
+    }
+  },
+  mounted() {
+    //change the title
+    this.titlepost = datsas.title
+  }
+}
 
 
 
