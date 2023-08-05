@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="titlepost">{{route.params.id}}</h2>
+
 
 
 
@@ -13,12 +13,18 @@
 import {useRoute} from "vue-router";
 
 
-let title= ""
+
 let datsas;
 
 const route = useRoute()
 const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.json`)
 datsas = await response.json()
+
+//add a title to the page inside of the POST div
+const title = document.createElement('h2')
+title.innerHTML = datsas.title
+document.getElementById("POST").appendChild(title)
+
 
 
 
