@@ -1,10 +1,10 @@
 <template>
   <div>
       <router-link :to="{path:'/blog/'+slug.Pathjson}" v-slot="{ href, route, navigate }">
-          <a :href="href" @click="navigate">
+
               <h2 id="title">{{title}}</h2>
               <h3 id="date">{{date}}</h3>
-          </a>
+
       </router-link>
   </div>
 
