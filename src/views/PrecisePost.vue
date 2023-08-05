@@ -1,7 +1,7 @@
 <template>
-
-    <h2 id="titlepost">{{titlepost}}</h2>
-
+<div>
+    <h2 id="titlepost">TEST 1 2 3</h2>
+</div>
 
 </template>
 
