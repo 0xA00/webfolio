@@ -1,9 +1,6 @@
 <template>
 <div id="POST">
 
-
-
-
 </div>
 </template>
 
@@ -22,8 +19,9 @@ datsas = await response.json()
 
 //add a title to the page inside of the POST div
 const title = document.createElement('h2')
-console.log(datsas.title)
+console.log(datsas.title+"------")
 title.innerHTML = datsas.title
+console.log(title.innerHTML)
 document.getElementById("POST").appendChild(title)
 
 
