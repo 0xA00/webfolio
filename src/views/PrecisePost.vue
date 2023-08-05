@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{title}}</h2>
+    <h2 v-html="title"></h2>
 
 
 
