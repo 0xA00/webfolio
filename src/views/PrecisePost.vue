@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 v-html="titler"></h2>
+    <h2>{{titler}}</h2>
 
 
 
@@ -8,34 +8,35 @@
 </div>
 </template>
 
-<script>
+<script setup>
 
 
 import {useRoute} from "vue-router";
+import {ref} from "vue";
 
 
 
 
-let titler= ""
+
 let datsas;
 
 let $route = useRoute();
 console.log($route.toString())
-const response = await fetch(`https://0xa0.dev/blog/`+$route+"/post.json")
+const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.json")
 datsas = await response.json()
-
-titler = datsas.title
-console.log(titler)
 
 //update the title with export
 export default {
-  data(){
+  setup() {
+    let title= ref("");
+    title = datsas.title
+    console.log(title)
     return {
-      titler: titler
+      titler: title
     }
   }
-
 }
+
 
 
 </script>
