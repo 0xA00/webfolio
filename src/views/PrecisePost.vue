@@ -23,7 +23,7 @@ let datsas;
 let $route = useRoute();
 const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.json")
 datsas = await response.json()
-console.log(datsas)
+console.log(datsas.title)
 
 //update the title with export
 let titler = ref(datsas.title)
