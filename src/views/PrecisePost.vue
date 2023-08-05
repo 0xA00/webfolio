@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h2 id="titlepost">TEST 1 2 3</h2>
+  <SlugBlog :Pathjson=$route.params.id></SlugBlog>
 </div>
 
 </template>
@@ -8,6 +8,7 @@
 <script setup>
 
 import {useRoute} from "vue-router";
+import SlugBlog from "@/views/SlugBlog.vue";
 const route = useRoute()
 let titlepost = ""
 
