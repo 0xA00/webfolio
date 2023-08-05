@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-  <h1>test 1 2 </h1>
+  <h1>{{titlepost}} </h1>
 </div>
 
 </template>
