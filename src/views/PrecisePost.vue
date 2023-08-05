@@ -1,14 +1,8 @@
 <template>
-<div id="POST">
 
     <h2 id="titlepost">{{titlepost}}</h2>
 
 
-
-
-
-
-</div>
 </template>
 
 <script setup>
@@ -20,13 +14,7 @@ let titlepost = ""
 let datsas;
 const response = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/post.json`)
 datsas = await response.json()
-
-await new Promise(resolve => {
-    setTimeout(() => {
-        titlepost = datsas.title
-        resolve()
-    }, 0)
-})
+titlepost = datsas.title
 
 
 

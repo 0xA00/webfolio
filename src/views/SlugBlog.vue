@@ -21,16 +21,6 @@ datsas = await response.json()
 title = datsas.title
 date = datsas.date
 
-//wait for the script to be loaded to update the title and date
-/*
-await new Promise(resolve => {
-    setTimeout(() => {
-        title = datsas.title
-        date = datsas.date
-        resolve()
-    }, 0)
-})
-*/
 
 
 </script>
