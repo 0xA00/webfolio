@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="titlepost">{{$route.params.id}}</h2>
+    <h2 id="titlepost">{{route.params.id}}</h2>
 
 
 
