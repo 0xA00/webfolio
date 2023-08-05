@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{title}}</h2>
+    <h2 id="title">test 1 2 3</h2>
 
 
 
@@ -25,14 +25,7 @@ console.log(datsas.title)
 
 
 
-await new Promise(resolve => {
-    setTimeout(() => {
-       //document with id title is updated
-      document.getElementById("title").innerHTML = datsas.title
-      title = datsas.title
-        resolve()
-    }, 1000)
-})
+
 
 
 
