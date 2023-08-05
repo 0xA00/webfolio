@@ -28,7 +28,7 @@ datsas = await response.json()
 //get the ref for titler used in the template
 
 onMounted(() => {
-  this.$refs.titlepost.innerHTML = datsas.title
+  console.log("mounted")
 })
 
 
