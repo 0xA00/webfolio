@@ -12,7 +12,7 @@
 
 
 import {useRoute} from "vue-router";
-import {reactive} from "vue";
+import {ref} from "vue";
 
 
 
@@ -25,7 +25,7 @@ const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.js
 datsas = await response.json()
 
 //update the title with export
-let titler = reactive(datsas.title)
+let titler = ref("test")
 console.log(titler)
 
 
