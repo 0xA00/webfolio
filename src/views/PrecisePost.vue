@@ -27,6 +27,7 @@ console.log(datsas.title)
 
 //update the title with export
 let titler = ref(datsas.title)
+console.log(titler.value)
 
 
 
