@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2>{{titler}}</h2>
+    <h2 ref="titler"></h2>
 
 
 
@@ -24,9 +24,13 @@ let $route = useRoute();
 const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.json")
 datsas = await response.json()
 
-//update the title with export
-let titler = ref("test")
-console.log(titler)
+
+//get the ref for titler used in the template
+const titler = this.$ref["titler"].focus()
+//change the title
+titler.innerHTML = datsas.title
+
+
 
 
 
