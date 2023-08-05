@@ -1,13 +1,14 @@
 <template>
 <div id="POST">
-    <h2 id="title">{{title}}</h2>
+    <h2 v-html="titler"></h2>
+
 
 
 
 </div>
 </template>
 
-<script setup>
+<script>
 
 
 import {useRoute} from "vue-router";
@@ -23,18 +24,15 @@ datsas = await response.json()
 titler = datsas.title
 console.log(titler)
 
+//update the title with export
+export default {
+  data(){
+    return {
+      titler: titler
+    }
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 </script>
