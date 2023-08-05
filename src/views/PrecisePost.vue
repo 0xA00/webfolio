@@ -8,7 +8,7 @@
 </div>
 </template>
 
-<script setup>
+<script>
 
 
 import {useRoute} from "vue-router";
@@ -17,8 +17,7 @@ import {useRoute} from "vue-router";
 let titler= ""
 let datsas;
 
-const route = useRoute()
-const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.json`)
+const response = await fetch(`https://0xa0.dev/blog/`+this.$route.params.id+`/post.json`)
 datsas = await response.json()
 
 titler = datsas.title
