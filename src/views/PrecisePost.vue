@@ -26,16 +26,8 @@ const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.js
 datsas = await response.json()
 
 //update the title with export
-export default {
-  setup() {
-    let title= ref("");
-    title = datsas.title
-    console.log(title)
-    return {
-      titler: title
-    }
-  }
-}
+let titler = ref(datsas.title)
+
 
 
 
