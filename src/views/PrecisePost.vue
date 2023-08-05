@@ -1,6 +1,6 @@
 <template>
 <div>
-  <SlugBlog :Pathjson=$route.params.id></SlugBlog>
+  <h1>{{$route.params.id}}</h1>
 </div>
 
 </template>
