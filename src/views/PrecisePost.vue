@@ -21,8 +21,9 @@ const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.jso
 datsas = await response.json()
 
 titler = datsas.title
+console.log(titler)
 
-export {titler as title}
+
 
 
 
