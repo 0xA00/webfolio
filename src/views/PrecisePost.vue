@@ -22,8 +22,11 @@ datsas = await response.json()
 
 //add a title to the page inside of the POST div
 const title = document.createElement('h2')
+console.log(datsas.title)
 title.innerHTML = datsas.title
 document.getElementById("POST").appendChild(title)
+
+
 
 
 
