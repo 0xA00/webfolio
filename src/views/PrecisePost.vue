@@ -25,7 +25,7 @@ await new Promise(resolve => {
     setTimeout(() => {
         titlepost = datsas.title
         resolve()
-    }, 10)
+    }, 0)
 })
 
 
