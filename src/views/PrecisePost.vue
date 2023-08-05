@@ -13,7 +13,7 @@ const route = useRoute()
 let titlepost = ""
 
 let datsas;
-const response = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/post.json`)
+const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.json`)
 datsas = await response.json()
 titlepost = datsas.title
 
