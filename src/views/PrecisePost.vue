@@ -11,6 +11,16 @@ import {useRoute} from "vue-router";
 const route = useRoute()
 let titlepost
 
+let datsas;
+//get the entire URL from this page
+let url = window.location.href
+//fetch the json file
+const response = await fetch(url+`/post.json`)
+datsas = await response.json()
+titlepost = datsas.title
+
+
+
 </script>
 
 
