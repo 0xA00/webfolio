@@ -1,6 +1,9 @@
 <template>
 <div id="POST">
-    <h2 :ref="titlepost"></h2>
+  <suspense>
+    <h2 id="titlepost">{{titlepost}}</h2>
+  </suspense>
+
 
 
 
@@ -8,21 +11,22 @@
 </div>
 </template>
 
-<script>
-
+<script setup>
 
 import {useRoute} from "vue-router";
-import {ref} from "vue";
+const route = useRoute()
+let titlepost = ""
 
-export default {
-  async setup() {
-    let datsas = ref("")
-    let route = useRoute();
-    const response = await fetch(`https://0xa0.dev/blog/` + route.params.id + "/post.json")
-    datsas = await response.json()
-    this.$refs.titlepost.innerHTML = datsas.title
-  }
-}
+let datsas;
+const response = await fetch(`https://0xa0.dev/blog/`+route.params.slug+`/post.json`)
+datsas = await response.json()
+
+await new Promise(resolve => {
+    setTimeout(() => {
+        titlepost = datsas.title
+        resolve()
+    }, 10)
+})
 
 
 

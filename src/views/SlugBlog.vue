@@ -26,7 +26,7 @@ await new Promise(resolve => {
         title = datsas.title
         date = datsas.date
         resolve()
-    }, 1000)
+    }, 10)
 })
 
 
