@@ -1,14 +1,15 @@
 <template>
 <div id="POST">
-  <h1>test 1 2</h1>
+  <h1>test 1 2 </h1>
 </div>
 
 </template>
 
 <script setup>
 
-
-
+import {useRoute} from "vue-router";
+const route = useRoute()
+let titlepost
 
 </script>
 
