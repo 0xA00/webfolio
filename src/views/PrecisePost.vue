@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="POST">
   <h1>{{titlepost}}</h1>
 </div>
 
@@ -8,17 +8,13 @@
 <script setup>
 
 import {useRoute} from "vue-router";
-import SlugBlog from "@/views/SlugBlog.vue";
 const route = useRoute()
-let titlepost = ""
+let titlepost
 
 let datsas;
 const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.json`)
 datsas = await response.json()
 titlepost = datsas.title
-
-
-
 
 
 </script>

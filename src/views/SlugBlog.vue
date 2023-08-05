@@ -1,6 +1,6 @@
 <template>
   <div>
-      <router-link :to="{path:'/blog/'+slug.Pathjson}" v-slot="{ href, route, navigate }">
+      <router-link :to="{path:'/blog/'+slug.Pathjson}">
 
               <h2 id="title">{{title}}</h2>
               <h3 id="date">{{date}}</h3>
@@ -13,8 +13,8 @@
 <script setup>
 
 const slug = defineProps(['Pathjson'])
-let title= ""
-let date= ""
+let title
+let date
 let datsas;
 const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
 datsas = await response.json()
