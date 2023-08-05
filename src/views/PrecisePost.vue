@@ -20,7 +20,8 @@ let titler= ""
 let datsas;
 
 let $route = useRoute();
-const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.json")
+console.log($route)
+const response = await fetch(`https://0xa0.dev/blog/`+$route+"/post.json")
 datsas = await response.json()
 
 titler = datsas.title
