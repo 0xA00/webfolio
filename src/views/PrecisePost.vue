@@ -1,6 +1,6 @@
 <template>
 <div id="POST">
-    <h2 id="title">test 1 2 3</h2>
+    <h2 id="titlepost">test 1 2 3</h2>
 
 
 
@@ -22,6 +22,7 @@ const response = await fetch(`https://0xa0.dev/blog/`+route.params.id+`/post.jso
 
 datsas = await response.json()
 console.log(datsas.title)
+
 
 
 
