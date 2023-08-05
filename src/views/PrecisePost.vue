@@ -12,7 +12,7 @@
 
 
 import {useRoute} from "vue-router";
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 
 
@@ -27,17 +27,9 @@ datsas = await response.json()
 
 //get the ref for titler used in the template
 
-export default{
-  data(){
-    return{
-      titlepost: ""
-    }
-  },
-  mounted() {
-    //change the title
-    this.titlepost = datsas.title
-  }
-}
+onMounted(() => {
+  this.$refs.titlepost.innerHTML = datsas.title
+})
 
 
 
