@@ -17,7 +17,7 @@ let title
 let date
 let datsas;
 const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
-datsas = await response.json()
+datsas =  response.json()
 title = datsas.title
 date = datsas.date
 
