@@ -8,28 +8,21 @@
 </div>
 </template>
 
-<script setup>
+<script>
 
 
 import {useRoute} from "vue-router";
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 
-
-
-
-
-let datsas;
-
-let $route = useRoute();
-const response = await fetch(`https://0xa0.dev/blog/`+$route.params.id+"/post.json")
-datsas = await response.json()
-
-
-//get the ref for titler used in the template
-
-onMounted(() => {
-  console.log("mounted")
-})
+export default {
+  async setup() {
+    let datsas = ref("")
+    let route = useRoute();
+    const response = await fetch(`https://0xa0.dev/blog/` + route.params.id + "/post.json")
+    datsas = await response.json()
+    this.$refs.titlepost.innerHTML = datsas.title
+  }
+}
 
 
 
