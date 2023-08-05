@@ -23,7 +23,6 @@ datsas = await response.json()
 title = datsas.title
 
 export default {
-    components: {},
     data() {
         return {
             title: title
