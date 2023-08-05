@@ -18,9 +18,11 @@ let date= ""
 let datsas;
 const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
 datsas = await response.json()
-
+title = datsas.title
+date = datsas.date
 
 //wait for the script to be loaded to update the title and date
+/*
 await new Promise(resolve => {
     setTimeout(() => {
         title = datsas.title
@@ -28,7 +30,7 @@ await new Promise(resolve => {
         resolve()
     }, 0)
 })
-
+*/
 
 
 </script>

@@ -1,8 +1,8 @@
 <template>
 <div id="POST">
-  <suspense>
+
     <h2 id="titlepost">{{titlepost}}</h2>
-  </suspense>
+
 
 
 
