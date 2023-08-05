@@ -14,7 +14,7 @@ let datsas;
 let url = window.location.href
 console.log(url)
 const response = await fetch(url+`/post.json`)
-datsas = await response.json()
+datsas = response.json()
 
 titlepost= "test"
 
