@@ -11,9 +11,10 @@ import {onMounted, ref} from "vue";
 let titlepost =ref("")
 
 onMounted(async () => {
-    const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
-    const datsas = await response.json()
-    titlepost.value = datsas.title
+  const response = await fetch(window.location.href+`/post.json`)
+  const datsas = await response.json()
+  titlepost.value = datsas.title
+  console.log(titlepost)
 })
 
 
