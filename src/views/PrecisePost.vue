@@ -1,6 +1,7 @@
 <template>
 <div id="POST">
   <h1>{{titlepost}} </h1>
+  <div id="content">{{content}}</div>
 </div>
 
 </template>
@@ -9,12 +10,17 @@
 import {onMounted, ref} from "vue";
 
 let titlepost =ref("")
+let content = ref("")
 
 onMounted(async () => {
   const response = await fetch(window.location.href+`/post.json`)
   const datsas = await response.json()
   titlepost.value = datsas.title
-  console.log(titlepost)
+  const contentresponse = await fetch(window.location.href+`/index.md`)
+  content.value = await contentresponse.text()
+
+
+
 })
 
 
