@@ -21,7 +21,9 @@ onMounted(async () => {
   const contentresponse = await fetch(window.location.href+`/index.md`)
   const converter = new showdown.Converter();
   let md = await contentresponse.text()
-  content.value = converter.makeHtml(md)
+  console.log(md)
+  content.value = converter.makeHtml(md).innerHTML
+
   titlepost.value = datsas.title
   datepost.value= datsas.date
 })
