@@ -23,6 +23,7 @@ onMounted(async () => {
   let md = await contentresponse.text()
   console.log(md)
   content = converter.makeHtml(md)
+  content = content.innerHTML
 
   titlepost.value = datsas.title
   datepost.value= datsas.date
