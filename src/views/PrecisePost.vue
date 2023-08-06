@@ -6,17 +6,15 @@
 </template>
 
 <script setup>
-let titlepost
+import {onMounted, ref} from "vue";
 
-let datsas;
-//get the entire URL from this page
+let titlepost =ref("")
 
-let url = window.location.href
-const response = await fetch(url+`/post.json`)
-datsas = await response.text()
-
-titlepost = datsas
-console.log(titlepost)
+onMounted(async () => {
+    const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
+    const datsas = await response.json()
+    titlepost.value = datsas.title
+})
 
 
 
