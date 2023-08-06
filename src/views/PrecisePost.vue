@@ -22,8 +22,8 @@ onMounted(async () => {
   const converter = new showdown.Converter();
   let md = await contentresponse.text()
   console.log(md)
-  content = converter.makeHtml(md)
-  content.innerHTML = content
+  content.value = converter.makeHtml(md)
+
 
   titlepost.value = datsas.title
   datepost.value= datsas.date
