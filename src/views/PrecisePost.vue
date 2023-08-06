@@ -56,6 +56,6 @@ h3{
     -moz-osx-font-smoothing: grayscale;
   color: #b2beb5;
   font-size: 1em;
-  margin-top: -15px;
+
 }
 </style>
