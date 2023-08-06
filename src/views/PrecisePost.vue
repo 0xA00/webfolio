@@ -15,12 +15,9 @@ let content = ref("")
 onMounted(async () => {
   const response = await fetch(window.location.href+`/post.json`)
   const datsas = await response.json()
-  titlepost.value = datsas.title
   const contentresponse = await fetch(window.location.href+`/index.md`)
   content.value = await contentresponse.text()
-
-
-
+  titlepost.value = datsas.title
 })
 
 
