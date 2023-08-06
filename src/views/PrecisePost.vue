@@ -9,6 +9,7 @@
 
 <script setup>
 import {onMounted, ref} from "vue";
+import showdown from "showdown";
 
 let titlepost =ref("")
 let content = ref("")
