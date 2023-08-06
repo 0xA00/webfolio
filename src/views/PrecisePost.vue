@@ -2,6 +2,7 @@
 <div id="POST">
   <h1>{{titlepost}} </h1>
   <div id="content">{{content}}</div>
+  <h3 id="datepost"> {{datepost}} </h3>
 </div>
 
 </template>
@@ -11,18 +12,15 @@ import {onMounted, ref} from "vue";
 
 let titlepost =ref("")
 let content = ref("")
+let datepost = ref("")
 
 onMounted(async () => {
   const response = await fetch(window.location.href+`/post.json`)
   const datsas = await response.json()
-  titlepost.value = datsas.title
   const contentresponse = await fetch(window.location.href+`/index.md`)
-  let converter = new showdown.Converter()
-  let mdcontent = await contentresponse.text()
-  content.value = converter.makeHtml(mdcontent)
-
-
-
+  content.value = await contentresponse.text()
+  titlepost.value = datsas.title
+  datepost.value= datsas.date
 })
 
 
@@ -50,5 +48,14 @@ h2{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 color:whitesmoke;
+}
+
+h3{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #b2beb5;
+  font-size: 1em;
+
 }
 </style>
