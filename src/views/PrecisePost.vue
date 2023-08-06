@@ -54,6 +54,7 @@ h2{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 color:whitesmoke;
+  margin-left: 2%;
 }
 
 h3{
