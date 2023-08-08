@@ -55,6 +55,7 @@ h2{
     -moz-osx-font-smoothing: grayscale;
 color:whitesmoke;
   margin-left: 2%;
+  width: 80%;
 }
 
 h3{
