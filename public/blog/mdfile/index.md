@@ -4,7 +4,7 @@ First of all , all the post are added in the **blog** folder and each post is hi
 
 The structure of a post is the following :
 
-![img.png](img.png)
+![img.png](https://0xa0.dev/blog/mdfile/img.png)
 
 The **index.md** file is the file that contains the content of the post and the **post.json** file contains the metadata of the post as the title and the date.
 
