@@ -1,7 +1,7 @@
 <template>
   <div id="BlogPosts">
 
-    <div v-for="(post) in nbOfPosts" :key="post">
+    <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
         <SlugBlog :Pathjson="post"></SlugBlog>
 
   </div>
@@ -43,6 +43,18 @@ export default {
 
 #BlogPosts{
     margin-left: 2%;
+}
+
+.BlogPostsSlugs{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    border: 1px solid #42b983;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px #42b983;
 }
 
 </style>
