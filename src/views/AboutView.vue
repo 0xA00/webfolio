@@ -53,7 +53,7 @@
   font-family: TASADis-Med, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgba(178, 190, 181, 0.96);
+  color: rgba(231, 238, 233, 0.96);
 
 }
 
@@ -85,7 +85,7 @@
   font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
-  color: #b2beb5;
+  color: rgba(231, 238, 233, 0.96);
   margin-top: 20px;
   margin-bottom: 20px;
 }
