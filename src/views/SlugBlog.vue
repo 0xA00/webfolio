@@ -1,6 +1,6 @@
 <template>
   <div>
-      <router-link :to="{path:'/blog/'+slug.Pathjson}">
+      <router-link style="text-decoration: none" :to="{path:'/blog/'+slug.Pathjson}">
 
               <h2 id="title">{{title}}</h2>
               <h3 id="date">{{date}}</h3>
@@ -27,9 +27,7 @@ date = datsas.date
 
 <style scoped>
 
-router-link:hover{
-    text-decoration: none;
-}
+
 
 @font-face {
   font-family:'TASADis-Med';
