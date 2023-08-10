@@ -38,7 +38,7 @@ date = datsas.date
 }
 
 #title{
-    font-family: ElliotSansBold,Avenir, Helvetica, Arial, sans-serif;
+    font-family: TASADis-Bold,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -46,7 +46,7 @@ date = datsas.date
 }
 
 #date{
-    font-family: ElliotSans,Avenir, Helvetica, Arial, sans-serif;
+    font-family: TASADis-Med,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
