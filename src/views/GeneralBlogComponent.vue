@@ -49,11 +49,14 @@ export default {
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 60%;
+    width: 40%;
     border: 1px solid #37da92;
     padding: 2%;
     background-color: #37da92;
 
+  @media query (max-width: 600px) {
+    width: 90%;
+}
 }
 
 </style>
