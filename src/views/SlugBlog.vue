@@ -27,6 +27,10 @@ date = datsas.date
 
 <style scoped>
 
+router-link:hover{
+    text-decoration: none;
+}
+
 @font-face {
   font-family:'TASADis-Med';
   src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
