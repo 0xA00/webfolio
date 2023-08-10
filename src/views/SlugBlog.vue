@@ -28,13 +28,13 @@ date = datsas.date
 <style scoped>
 
 @font-face {
-  font-family:'ElliotSans';
-  src: local("ElliotSans"), url("../font/ElliotSans-Regular.ttf");
+  font-family:'TASADis-Med';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
 }
 
 @font-face {
-  font-family:'ElliotSansBold';
-  src: local("ElliotSans"), url("../font/ElliotSans-Bold.ttf");
+  font-family:'TASADis-Bold';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
 }
 
 #title{
