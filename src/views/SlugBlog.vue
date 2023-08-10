@@ -49,7 +49,7 @@ date = datsas.date
     font-family: ElliotSans,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  color: #b2beb5;
+  color: #ffffff;
   font-size: 1em;
   margin-top: -15px;
 }
