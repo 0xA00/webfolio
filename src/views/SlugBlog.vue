@@ -37,11 +37,20 @@ date = datsas.date
   src: local("ElliotSans"), url("../font/ElliotSans-Bold.ttf");
 }
 
-#title,#date{
-    font-family: ElliotSans,Avenir, Helvetica, Arial, sans-serif;
+#title{
+    font-family: ElliotSansBold,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #42b983;
+}
+
+#date{
+    font-family: ElliotSans,Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #b2beb5;
+  font-size: 1em;
+  margin-top: -15px;
 }
 
 h2{
