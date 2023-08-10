@@ -1,12 +1,12 @@
 <template>
   <div id="BlogPosts">
-    <router-link style="text-decoration: none" :to="{path:'/blog/'+slug.Pathjson}">
+
     <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
-
+      <router-link style="text-decoration: none" :to="{path:'/blog/'+post}">
         <SlugBlog :Pathjson="post"></SlugBlog>
-
+      </router-link>
   </div>
-    </router-link>
+
   </div>
 
 </template>
