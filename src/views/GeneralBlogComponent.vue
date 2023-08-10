@@ -54,7 +54,7 @@ export default {
     padding: 2%;
     background-color: #37da92;
 
-  @media query (max-width: 600px) {
+  @media query (max-width: 900px) {
     width: 90%;
 }
 }
