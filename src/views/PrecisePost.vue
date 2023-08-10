@@ -36,21 +36,32 @@ onMounted(async () => {
 </script>
 
 
+
 <style scoped>
+
+@font-face {
+  font-family:'TASADis-Med';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
+}
+
+@font-face {
+  font-family:'TASADis-Bold';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
+}
 
 #POST{
     margin-left: 2%;
 }
 
-h2{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+h1{
+    font-family: "TASADis-Bold",Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #42b983;
 }
 
 #content{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family:"TASADis-Med", Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 color:whitesmoke;
@@ -59,7 +70,7 @@ color:whitesmoke;
 }
 
 h3{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "TASADis-Med",Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #b2beb5;
