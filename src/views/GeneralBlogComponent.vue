@@ -50,9 +50,9 @@ export default {
     margin-top: 2%;
     margin-bottom: 2%;
     width: 80%;
-    border: 1px solid #42b983;
+    border: 1px solid #37da92;
     padding: 2%;
-    background-color: #42b983;
+    background-color: #37da92;
 
 }
 
