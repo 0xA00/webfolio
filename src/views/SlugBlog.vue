@@ -27,21 +27,17 @@ date = datsas.date
 
 <style scoped>
 
-a:link {
-    text-decoration: none;
-  }
+@font-face {
+  font-family:'ElliotSans';
+  src: local("ElliotSans"), url("../font/ElliotSans-Regular.ttf");
+}
 
-  a:visited {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  a:active {
-    text-decoration: none;
-  }
+#title{
+    font-family: ElliotSans,Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #42b983;
+}
 
 h2{
     font-family: Avenir, Helvetica, Arial, sans-serif;
