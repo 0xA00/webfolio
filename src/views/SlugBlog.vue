@@ -42,6 +42,7 @@ date = datsas.date
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #42b983;
+  font-size: large;
 }
 
 #date{
