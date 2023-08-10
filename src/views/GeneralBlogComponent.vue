@@ -53,7 +53,7 @@ export default {
     border: 1px solid #42b983;
     border-radius: 5px;
     padding: 2%;
-    background-color: #1e1e1e;
+    background-color: #42b983;
     box-shadow: 0 0 10px #42b983;
 }
 
