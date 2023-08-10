@@ -53,23 +53,5 @@ date = datsas.date
   margin-top: -15px;
 }
 
-h2{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  color: #42b983;
-}
-
-h3{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  color: #b2beb5;
-  font-size: 1em;
-  margin-top: -15px;
-}
-
-
-
 
 </style>
