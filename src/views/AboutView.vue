@@ -46,14 +46,11 @@
   src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
 }
 
-@font-face {
-  font-family:'SmileySans';
-  src: local("SmileySans"), url("../font/smiley/SmileySans-Oblique.otf");
-}
+
 
 
 .about {
-  font-family: SmileySans, Avenir, Helvetica, Arial, sans-serif;
+  font-family: TASADis-Med, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #b2beb5;
@@ -85,6 +82,7 @@
 
 
 .about h1 {
+  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
   color: #b2beb5;
