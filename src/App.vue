@@ -8,6 +8,9 @@
 </template>
 
 <style>
+
+
+
 #app {
   margin-left: 5%;
   margin-top:5%;
@@ -30,10 +33,10 @@ nav a.router-link-exact-active {
 }
 
 h1 {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #42b983;
+  color: #ffffff;
 
 }
 a {
