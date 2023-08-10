@@ -1,9 +1,9 @@
 <template>
   <router-view/>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/blogs">Blog</router-link>
+    <router-link style="text-decoration: none" to="/">Home</router-link> |
+    <router-link style="text-decoration: none" to="/about">About</router-link> |
+    <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
 </template>
 
@@ -21,6 +21,7 @@ body{
 
 nav {
   padding: 30px;
+  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
 }
 
 nav a {
