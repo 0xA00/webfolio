@@ -1,10 +1,12 @@
 <template>
   <div id="BlogPosts">
-
+    <router-link style="text-decoration: none" :to="{path:'/blog/'+slug.Pathjson}">
     <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
+
         <SlugBlog :Pathjson="post"></SlugBlog>
 
   </div>
+    </router-link>
   </div>
 
 </template>
@@ -57,6 +59,7 @@ export default {
   @media (max-width: 780px) {
     width: 90%;
 }
+
 }
 
 </style>

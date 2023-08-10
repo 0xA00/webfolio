@@ -1,11 +1,7 @@
 <template>
   <div>
-      <router-link style="text-decoration: none" :to="{path:'/blog/'+slug.Pathjson}">
-
-              <h2 id="title">{{title}}</h2>
-              <h3 id="date">{{date}}</h3>
-
-      </router-link>
+    <h2 id="title">{{title}}</h2>
+    <h3 id="date">{{date}}</h3>
   </div>
 
 </template>
