@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #c400da;
 }
 
 h1 {
@@ -41,12 +41,12 @@ h1 {
 
 }
 a {
-    color: #42b983;
+    color: #c400da;
     text-decoration: none;
 }
 
 a:hover {
-    color: #66c2a4;
+    color: #c400da;
     text-decoration: underline;
 }
 </style>

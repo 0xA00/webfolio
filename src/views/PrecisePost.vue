@@ -57,7 +57,7 @@ h1{
     font-family: "TASADis-Bold",Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  color: #42b983;
+  color: #c400da;
 }
 
 #content{

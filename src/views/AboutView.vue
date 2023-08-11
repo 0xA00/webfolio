@@ -59,12 +59,12 @@
 
 #pronouns {
   font-size: 0.5em;
-  color: #42b983;
+  color: #c400da;
 }
 
 .ICONS {
   font-size: 2em;
-  color: #42b983;
+  color: #c400da;
   margin-right: 10px;
 }
 
@@ -73,7 +73,7 @@
 }
 .about ul li:before {
   content: "-";
-  color: #42b983;
+  color: #c400da;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
