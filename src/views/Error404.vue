@@ -14,7 +14,7 @@ h1, p {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  color: #c400da;
+  color: #005eda;
   text-align: center;
 }
 </style>

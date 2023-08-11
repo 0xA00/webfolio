@@ -19,6 +19,6 @@ h1, p {
 }
 
 p{
-    color: #42b983;
+    color: #005eda;
 }
 </style>

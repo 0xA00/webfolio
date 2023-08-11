@@ -52,9 +52,9 @@ export default {
     margin-top: 2%;
     margin-bottom: 2%;
     width: 40%;
-    border: 1px solid #c400da;
+    border: 1px solid #005eda;
     padding: 2%;
-    background-color: #c400da;
+    background-color: #005eda;
 
   @media (max-width: 780px) {
     width: 90%;
