@@ -58,7 +58,8 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from) =>{
-    document.title = `0xa0 - `+`${to.meta.title}`
+    //document.title = `0xa0 - `+`${to.meta.title}`
+
 })
 
 export default router
