@@ -74,6 +74,8 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     //delete all the body
     document.body.innerHTML = ""
     //then display this message
-    document.body.innerHTML = "<pre style=\"word-wrap: break-word; white-space: pre-wrap;\">Sorry, but this website is not available on Linux while using another browser than Firefox. Please use Firefox.</pre>"
+    document.body.innerHTML = "<pre style=\"word-wrap: break-word; white-space: pre-wrap; color=#ffffff\">Sorry, but this website is not available on Linux while using another browser than Firefox. Please use Firefox.</pre>"
+    //change body color to error color (gray like)
+    document.body.style.backgroundColor = "#16161d"
 }
 </script>
