@@ -70,8 +70,10 @@ a:hover {
 let os = navigator.platform
 let os2 = navigator.userAgent
 //if user is on Chrome AND on Linux, then block access to the website
-if (os2.includes("Chrome") && os.includes("Linux")){
-    //dom manipulation
-    document.getElementById("app").innerHTML = "<h1>Sorry, but this website is not available on Chrome while using Linux OS . Please use Firefox or any other browser.</h1>"
+if (os.includes("Linux") && !os2.includes("Firefox")){
+    //delete all the body
+    document.body.innerHTML = ""
+    //then display this message
+    document.body.innerHTML = "<h1>Sorry, but this website is not available on Linux. Please use another OS.</h1>"
 }
 </script>
