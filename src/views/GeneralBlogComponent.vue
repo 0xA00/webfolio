@@ -1,10 +1,12 @@
 <template>
   <div id="BlogPosts">
 
-    <div v-for="(post) in nbOfPosts" :key="post">
+    <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
+      <router-link style="text-decoration: none" :to="{path:'/blog/'+post}">
         <SlugBlog :Pathjson="post"></SlugBlog>
-
+      </router-link>
   </div>
+
   </div>
 
 </template>
@@ -16,14 +18,11 @@ import SlugBlog from "@/views/SlugBlog.vue";
 
 //get blogs.json in order to get the number of posts
 let nbOfPosts = []
-const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/blogJson/blogs.json`)
+const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
 nbOfPosts = await response.json()
 let nbOfPostsLength = nbOfPosts.length
-// put each post individually in an array and remove the [" and "] from each post
-
 nbOfPosts = nbOfPosts.posts
 
-console.log(nbOfPosts)
 
 
 
@@ -46,6 +45,21 @@ export default {
 
 #BlogPosts{
     margin-left: 2%;
+}
+
+.BlogPostsSlugs{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    border: 1px solid #005eda;
+    padding: 2%;
+    background-color: #005eda;
+
+  @media (max-width: 780px) {
+    width: 90%;
+}
+
 }
 
 </style>

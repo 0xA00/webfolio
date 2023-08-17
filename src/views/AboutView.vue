@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <img alt="Profile Picture" src="../assets/BNA.png">
-    <h1>Hi I'm 0xa0 !</h1>
+    <h1>Hi I'm 0xa0 !🏳️‍⚧<span id="pronouns">She/Her</span>️</h1>
 
     <p>I'm a 20 years old french student in computer science. I'm currently studying at <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a> in Montpellier.</p>
 
@@ -36,22 +36,35 @@
 
 <style>
 
+@font-face {
+  font-family:'TASADis-Med';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
+}
+
+@font-face {
+  font-family:'TASADis-Bold';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
+}
+
+
+
+
 .about {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: TASADis-Med, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #b2beb5;
+  color: rgba(231, 238, 233, 0.96);
 
 }
 
 #pronouns {
   font-size: 0.5em;
-  color: #42b983;
+  color: #005eda;
 }
 
 .ICONS {
   font-size: 2em;
-  color: #42b983;
+  color: #005eda;
   margin-right: 10px;
 }
 
@@ -60,7 +73,7 @@
 }
 .about ul li:before {
   content: "-";
-  color: #42b983;
+  color: #005eda;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -69,9 +82,10 @@
 
 
 .about h1 {
+  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: bold;
-  color: #b2beb5;
+  color: rgba(231, 238, 233, 0.96);
   margin-top: 20px;
   margin-bottom: 20px;
 }

@@ -27,7 +27,6 @@ export default defineComponent({
 
 h1{
     font-size: 3em;
-
     margin-top: 10px;
 }
 </style>

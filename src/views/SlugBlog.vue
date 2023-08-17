@@ -1,36 +1,21 @@
 <template>
   <div>
-      <router-link to="/" v-slot="{ href, route, navigate }">
-          <a :href="href" @click="navigate">
-              <h2 id="title">{{title}}</h2>
-              <h3 id="date">{{date}}</h3>
-          </a>
-      </router-link>
+    <h2 id="title">{{title}}</h2>
+    <h3 id="date">{{date}}</h3>
   </div>
 
 </template>
 
 <script setup>
-import {ref} from 'vue'
 
 const slug = defineProps(['Pathjson'])
-let title= ""
-let date= ""
-
+let title
+let date
 let datsas;
-
-const response = await fetch(`https://vercelapi-0xa00.vercel.app/json/`+slug.Pathjson+`/post.json`)
+const response = await fetch(`https://0xa0.dev/blog/`+slug.Pathjson+`/post.json`)
 datsas = await response.json()
-
-
-//wait for the script to be loaded to update the title and date
-await new Promise(resolve => {
-    setTimeout(() => {
-        title = datsas.title
-        date = datsas.date
-        resolve()
-    }, 1000)
-})
+title = datsas.title
+date = datsas.date
 
 
 
@@ -38,39 +23,34 @@ await new Promise(resolve => {
 
 <style scoped>
 
-a:link {
-    text-decoration: none;
-  }
 
-  a:visited {
-    text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: none;
-  }
-
-  a:active {
-    text-decoration: none;
-  }
-
-h2{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  color: #42b983;
+@font-face {
+  font-family:'TASADis-Med';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
 }
 
-h3{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family:'TASADis-Bold';
+  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
+}
+
+#title{
+    font-family: TASADis-Bold,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  color: #b2beb5;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#date{
+    font-family: TASADis-Med,Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
   font-size: 1em;
   margin-top: -15px;
 }
-
-
 
 
 </style>
