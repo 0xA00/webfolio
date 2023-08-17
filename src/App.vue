@@ -1,8 +1,9 @@
 <template>
   <router-view/>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+      <router-link style="text-decoration: none" to="/">Home</router-link> |
+      <router-link style="text-decoration: none" to="/about">About</router-link> |
+      <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
   <div class="nightlightmode">
     <button @click="">Toggle Theme</button>
@@ -16,11 +17,16 @@
     position: fixed;
     bottom: 2%;
     right: 2%;
-    background: rgba( 255, 255, 255, 0.3 );
+    background: rgba( 21, 34, 46, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 16px );
-    -webkit-backdrop-filter: blur( 16px );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
     border-radius: 10px;
+
+    width: 50px;
+    height: 25px;
+
+
 }
 
 #app {
@@ -43,23 +49,20 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+    color: #005eda;
 }
-
 h1 {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #42b983;
-
+    font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ffffff;
 }
 a {
-    color: #42b983;
+    color: #005eda;
     text-decoration: none;
 }
-
 a:hover {
-    color: #66c2a4;
+    color: #005eda;
     text-decoration: underline;
 }
 </style>
