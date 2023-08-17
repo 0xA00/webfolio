@@ -5,9 +5,7 @@
       <router-link style="text-decoration: none" to="/about">About</router-link> |
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
-  <div class="nightlightmode">
-    <button @click="">Toggle Theme</button>
-  </div>
+
 </template>
 
 <style>
