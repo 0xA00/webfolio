@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 id="title">{{title}}</h2>
-    <h3 id="date">{{date}}</h3>
+    <h2 id="title" v-html="title"></h2>
+    <h3 id="date" v-html="date"></h3>
   </div>
 
 </template>

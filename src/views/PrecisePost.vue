@@ -1,8 +1,8 @@
 <template>
 <div id="POST">
-  <h1>{{titlepost}} </h1>
+  <h1 v-html="titlepost"></h1>
   <div id="content" v-html="content"></div>
-  <h3 id="datepost"> {{datepost}} </h3>
+  <h3 id="datepost" v-html="datepost"></h3>
 </div>
 
 </template>
