@@ -74,6 +74,6 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     //delete all the body
     document.body.innerHTML = ""
     //then display this message
-    document.body.innerHTML = "<h1>Sorry, but this website is not available on Linux. Please use another OS.</h1>"
+    document.body.innerHTML = "<pre style=\"word-wrap: break-word; white-space: pre-wrap;\">Sorry, but this website is not available on Linux while using another browser than Firefox. Please use another browser.</pre>"
 }
 </script>
