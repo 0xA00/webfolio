@@ -12,7 +12,7 @@
 <style>
 
 .nightlightmode{
-    //make it sticky on the bottom right of the screen
+
     position: fixed;
     bottom: 2%;
     right: 2%;
