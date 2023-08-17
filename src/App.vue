@@ -12,17 +12,7 @@
 
 <style>
 
-.nightlightmode{
 
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 16px );
-    -webkit-backdrop-filter: blur( 16px );
-    border-radius: 10px;
-}
 
 
 
