@@ -4,13 +4,27 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <div class="nightlightmode">
+    <button @click="">Toggle Theme</button>
+  </div>
 </template>
 
 <style>
-#app {
-  margin-left: 5%;
-  margin-top:5%;
+
+.nightlightmode{
+    //make it sticky on the bottom right of the screen
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 16px );
+    -webkit-backdrop-filter: blur( 16px );
+    border-radius: 10px;
 }
+
+
+
 body{
   background-color: #16161d;
 }
