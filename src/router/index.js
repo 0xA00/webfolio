@@ -58,8 +58,8 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from) =>{
-    document.title = '${to.meta.title}'+'  |  + Blog'
-    //only for linux : if readsibling can't be
+    document.title = ${to.meta.title}+'  |  + Blog'
+
 
 
 })
