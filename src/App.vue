@@ -17,8 +17,10 @@
 <style>
 
 .nightlightmodebutton{
+    top: 2%;
+    left: 2%;
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 90%;
     border-radius: 25% 25% 25% 25% / 50% 50% 50% 50% ;
     background: #b9b9b9;
@@ -116,7 +118,7 @@ function nightlightmode(){
     //get the body
     let body = document.body
     //if the body is not in nightlightmode
-    if (body.style.backgroundColor !== "white"){
+    if (body.style.backgroundColor !== "#eae9e9"){
         //change the body color to white
         body.style.backgroundColor = "#eae9e9"
         //change the nightlightmode button color to light green
@@ -125,7 +127,7 @@ function nightlightmode(){
         //change the circle color to white
         circle.style.backgroundColor = "white"
         //make the circle go the the right smoothly with a transition translation
-        circle.style.transform = "translateX(90%)"
+        circle.style.transform = "translateX(96%)"
     }
     //if the body is in nightlightmode
     else{
