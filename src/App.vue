@@ -6,12 +6,36 @@
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
   <div class="nightlightmode">
-    night
+      <div class="nightlightmodebutton" @click="nightlightmode">
+          <div class="circle"></div>
+
+    </div>
   </div>
 
 </template>
 
 <style>
+
+.nightlightmodebutton{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #b9b9b9;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.circle{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: all 0.5s ease;
+}
 
 .nightlightmode{
 
@@ -81,5 +105,33 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     document.body.innerHTML = "<pre style=\"word-wrap: break-word; white-space: pre-wrap; color: #ffffff\">Sorry, but this website is not available on Linux while using another browser than Firefox. Please use Firefox.</pre>"
     //change body color to error color (gray like)
     document.body.style.backgroundColor = "#121212"
+}
+
+//function to change the color of the nightlightmode button
+function nightlightmode(){
+    //get the nightlightmode button
+    let nightlightmodebutton = document.getElementsByClassName("nightlightmodebutton")[0]
+    //get the circle inside the nightlightmode button
+    let circle = document.getElementsByClassName("circle")[0]
+    //get the body
+    let body = document.body
+    //if the body is not in nightlightmode
+    if (body.style.backgroundColor !== "white"){
+        //change the body color to white
+        body.style.backgroundColor = "white"
+        //change the nightlightmode button color to black
+        nightlightmodebutton.style.backgroundColor = "black"
+        //change the circle color to white
+        circle.style.backgroundColor = "white"
+    }
+    //if the body is in nightlightmode
+    else{
+        //change the body color to black
+        body.style.backgroundColor = "#16161d"
+        //change the nightlightmode button color to white
+        nightlightmodebutton.style.backgroundColor = "white"
+        //change the circle color to black
+        circle.style.backgroundColor = "black"
+    }
 }
 </script>
