@@ -115,12 +115,6 @@ let activated = localStorage.getItem("activated") || false
 localStorage.setItem("activated", activated)
 
 //if activated is true, launch a function to change the color of the nightlightmode button
-if (activated){
-    activated=!activated
-    //wait for the page to load
-    window.onload = nightlightmode()
-
-}
 
 
 //function to change the color of the nightlightmode button
