@@ -128,7 +128,12 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
 let activated = localStorage.getItem("activated") || false
 localStorage.setItem("activated", activated)
 
-//if activated is true, launch a function to change the color of the nightlightmode button
+//if activated is true, launch a function to change the color of the nightlightmode button when the page is ENTERELY loaded
+if (activated){
+    document.addEventListener("DOMContentLoaded", function(){
+        nightlightmode()
+    })
+}
 
 function nightlightmode(){
 //function to change the color of the nightlightmode button
