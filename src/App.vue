@@ -5,6 +5,9 @@
       <router-link style="text-decoration: none" to="/about">About</router-link> |
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
+  <div class="nightlightmode">
+    NightLightMode
+  </div>
 
 </template>
 
@@ -21,8 +24,8 @@
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 10px;
 
-    width: 50px;
-    height: 25px;
+    width: 100px;
+    height: 70px;
 
 
 }
