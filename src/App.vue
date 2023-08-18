@@ -110,11 +110,15 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     document.body.style.backgroundColor = "#121212"
 }
 
-let activated = false
+//get localStorage of activated and if it doesn't exist, set it to false and create it
+let activated = localStorage.getItem("activated") || false
+localStorage.setItem("activated", activated)
+
 
 //function to change the color of the nightlightmode button
 function nightlightmode(){
     activated = !activated
+    localStorage.setItem("activated", activated)
     //get the nightlightmode button
     let nightlightmodebutton = document.getElementsByClassName("nightlightmodebutton")[0]
     //get the circle inside the nightlightmode button
