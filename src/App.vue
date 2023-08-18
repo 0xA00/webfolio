@@ -118,11 +118,14 @@ function nightlightmode(){
     //if the body is not in nightlightmode
     if (body.style.backgroundColor !== "white"){
         //change the body color to white
-        body.style.backgroundColor = "white"
-        //change the nightlightmode button color to black
-        nightlightmodebutton.style.backgroundColor = "black"
+        body.style.backgroundColor = "#eae9e9"
+        //change the nightlightmode button color to light green
+        nightlightmodebutton.style.backgroundColor = "#40ec57"
+
         //change the circle color to white
         circle.style.backgroundColor = "white"
+        //make the circle go the the right smoothly with a transition translation
+        circle.style.transform = "translateX(90%)"
     }
     //if the body is in nightlightmode
     else{
@@ -131,7 +134,9 @@ function nightlightmode(){
         //change the nightlightmode button color to white
         nightlightmodebutton.style.backgroundColor = "white"
         //change the circle color to black
-        circle.style.backgroundColor = "black"
+        circle.style.backgroundColor = "white"
+        //make the circle go the the left smoothly with a transition translation
+        circle.style.transform = "translateX(4%)"
     }
 }
 </script>
