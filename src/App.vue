@@ -131,17 +131,40 @@ function nightlightmode(){
         circle.style.backgroundColor = "white"
         //make the circle go the the right smoothly with a transition translation
         circle.style.transform = "translateX(100%)"
+        //make every text color black
+        let text = document.getElementsByTagName("p")
+        for (let i = 0; i < text.length; i++){
+            text[i].style.color = "black"
+        }
+        //make every h1 color black
+        let h1 = document.getElementsByTagName("h1")
+        for (let i = 0; i < h1.length; i++){
+            h1[i].style.color = "black"
+        }
+        //make every h2 color black
+        let h2 = document.getElementsByTagName("h2")
+        for (let i = 0; i < h2.length; i++){
+            h2[i].style.color = "black"
+        }
+
     }
     //if the body is in nightlightmode
     else{
         //change the body color to black
         body.style.backgroundColor = "#16161d"
         //change the nightlightmode button color to white
-        nightlightmodebutton.style.backgroundColor = "white"
+        nightlightmodebutton.style.backgroundColor = "#b9b9b9"
         //change the circle color to black
         circle.style.backgroundColor = "white"
         //make the circle go the the left smoothly with a transition translation
         circle.style.transform = "translateX(4%)"
+        //make every text color white
+        let text = document.getElementsByTagName("p")
+        for (let i = 0; i < text.length; i++){
+            text[i].style.color = "white"
+        }
+        //make every h1 color white
+
     }
 }
 </script>
