@@ -28,10 +28,10 @@
 
 .circle{
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 45%;
-    height: 90%;
+    top: 4%;
+    left: 4%;
+    width: 40%;
+    height: 85%;
     border-radius: 50%;
     background: #ffffff;
     transition: all 0.5s ease;
