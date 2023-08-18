@@ -64,6 +64,7 @@
 
 body{
   background-color: #16161d;
+    transition: color 0.5s ease;
 }
 
 nav {
