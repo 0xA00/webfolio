@@ -19,6 +19,6 @@ h1, p {
 }
 
 p{
-    color: #005eda;
+    color: rgba(231, 238, 233, 0.96);
 }
 </style>

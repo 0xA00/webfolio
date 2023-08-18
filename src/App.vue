@@ -64,7 +64,7 @@
 
 body{
   background-color: #16161d;
-    transition: color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 nav {
@@ -162,17 +162,17 @@ function nightlightmode(){
         //make every text color white
         let text = document.getElementsByTagName("p")
         for (let i = 0; i < text.length; i++){
-            text[i].style.color = "E7EEE9F4"
+            text[i].style.color = "#E7EEE9F4"
         }
         //make every h1 color E7EEE9F4
         let h1 = document.getElementsByTagName("h1")
         for (let i = 0; i < h1.length; i++){
-            h1[i].style.color = "E7EEE9F4"
+            h1[i].style.color = "#E7EEE9F4"
         }
         //make every h2 color E7EEE9F4
         let h2 = document.getElementsByTagName("h2")
         for (let i = 0; i < h2.length; i++){
-            h2[i].style.color = "E7EEE9F4"
+            h2[i].style.color = "#E7EEE9F4"
         }
 
 
