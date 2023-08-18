@@ -20,7 +20,7 @@
     position: relative;
     width: 90%;
     height: 90%;
-    border-radius: 50%;
+    border-radius: 25%;
     background: #b9b9b9;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -30,7 +30,7 @@
     position: absolute;
     top: 5%;
     left: 5%;
-    width: 90%;
+    width: 45%;
     height: 90%;
     border-radius: 50%;
     background: #ffffff;
@@ -50,7 +50,7 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     width: 100px;
-    height: 70px;
+    height: 50px;
 
 
 }
