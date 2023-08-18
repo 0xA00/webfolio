@@ -109,8 +109,11 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     document.body.style.backgroundColor = "#121212"
 }
 
+let activated = false
+
 //function to change the color of the nightlightmode button
 function nightlightmode(){
+    activated = !activated
     //get the nightlightmode button
     let nightlightmodebutton = document.getElementsByClassName("nightlightmodebutton")[0]
     //get the circle inside the nightlightmode button
@@ -118,7 +121,7 @@ function nightlightmode(){
     //get the body
     let body = document.body
     //if the body is not in nightlightmode
-    if (body.style.backgroundColor !== "#eae9e9"){
+    if (activated){
         //change the body color to white
         body.style.backgroundColor = "#eae9e9"
         //change the nightlightmode button color to light green
