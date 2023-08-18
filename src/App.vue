@@ -17,12 +17,12 @@
 <style>
 
 .nightlightmodebutton{
-    top: 2%;
+    top: 4%;
     left: 2%;
     position: relative;
     width: 95%;
     height: 90%;
-    border-radius: 25% 25% 25% 25% / 50% 50% 50% 50% ;
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50% ;
     background: #b9b9b9;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -30,7 +30,7 @@
 
 .circle{
     position: absolute;
-    top: 4%;
+    top: 5%;
     left: 4%;
     width: 45%;
     height: 90%;
@@ -161,9 +161,19 @@ function nightlightmode(){
         //make every text color white
         let text = document.getElementsByTagName("p")
         for (let i = 0; i < text.length; i++){
-            text[i].style.color = "white"
+            text[i].style.color = "E7EEE9F4"
         }
-        //make every h1 color white
+        //make every h1 color E7EEE9F4
+        let h1 = document.getElementsByTagName("h1")
+        for (let i = 0; i < h1.length; i++){
+            h1[i].style.color = "E7EEE9F4"
+        }
+        //make every h2 color E7EEE9F4
+        let h2 = document.getElementsByTagName("h2")
+        for (let i = 0; i < h2.length; i++){
+            h2[i].style.color = "E7EEE9F4"
+        }
+
 
     }
 }
