@@ -20,7 +20,7 @@
     position: relative;
     width: 90%;
     height: 90%;
-    border-radius: 25%;
+    border-radius: 100%;
     background: #b9b9b9;
     cursor: pointer;
     transition: all 0.5s ease;
