@@ -32,8 +32,8 @@
     position: absolute;
     top: 4%;
     left: 4%;
-    width: 40%;
-    height: 85%;
+    width: 45%;
+    height: 90%;
     border-radius: 50%;
     background: #ffffff;
     transition: all 0.5s ease;
@@ -127,7 +127,7 @@ function nightlightmode(){
         //change the circle color to white
         circle.style.backgroundColor = "white"
         //make the circle go the the right smoothly with a transition translation
-        circle.style.transform = "translateX(96%)"
+        circle.style.transform = "translateX(100%)"
     }
     //if the body is in nightlightmode
     else{
