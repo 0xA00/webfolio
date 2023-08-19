@@ -1,4 +1,4 @@
-<template class="darktheme">
+<template>
   <router-view/>
   <nav>
       <router-link style="text-decoration: none" to="/">Home</router-link> |
@@ -56,7 +56,9 @@
 }
 
 
-.darktheme{
+
+
+[data-theme=dark]{
     background-color: #16161d;
     transition: all 0.5s ease;
 
@@ -131,8 +133,11 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
 }
 
 function nightlightmode(){
-    console.log("nightlightmode")
-    document.body.classList.toggle("darktheme")
+  if(document.body.getAttribute("data-theme") === "dark"){
+        document.body.setAttribute("data-theme", "")
+    }else{
+        document.body.setAttribute("data-theme", "dark")
+    }
 }
 
 
