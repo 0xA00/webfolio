@@ -51,10 +51,13 @@ export default {
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 40%;
     border: 1px solid #005eda;
     padding: 2%;
-    background-color: #005eda;
+    background: rgba( 34, 33, 33, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
 
   @media (max-width: 780px) {
     width: 90%;
