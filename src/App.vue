@@ -59,7 +59,7 @@
 
 
 [data-theme=dark]{
-    background-color: #16161d;
+    background-color: white;
     transition: all 0.5s ease;
 
    & .circle{
