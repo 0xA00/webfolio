@@ -6,8 +6,7 @@
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
   <div class="nightlightmode" @click="nightlightmode()">
-      <font-awesome-icon id='moon' icon="fa-solid fa-moon" />
-      <font-awesome-icon id='sun' icon="fa-solid fa-sun" />
+      test
   </div>
 
 </template>
@@ -27,42 +26,6 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
-
-.nightlightmode #moon{
-    display: none;
-
-    font-size: 2em;
-    color: #005eda;
-    margin: 10px;
-
-}
-
-.nightlightmode #sun{
-    display: block;
-    font-size: 2em;
-    color: #005eda;
-    margin: 10px;
-
-}
-
-
-
-[data-theme=dark]{
-    background-color: white;
-    transition: all 0.5s ease;
-}
-
-[data-theme=dark]#sun{
-    display: none;
-}
-
-[data-theme=dark]#moon{
-    display: block;
-}
-
-
-
-
 
 
 
@@ -111,6 +74,12 @@ a:hover {
 
 <script setup>
 
+import { useDark, useToggle } from "@vueuse/core";
+
+const isDark = useDark();
+const nightlightmode = useToggle(isDark);
+
+
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 //check user's os
@@ -126,20 +95,7 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     document.body.style.backgroundColor = "#121212"
 }
 
-function nightlightmode(){
-  if(document.body.getAttribute("data-theme") === "dark"){
-        document.body.setAttribute("data-theme", "")
-      //apply the theme to the sun and moon as it is not applied automatically
-        document.getElementById("moon").setAttribute("data-theme", "")
-        document.getElementById("sun").setAttribute("data-theme", "")
 
-    }else{
-        document.body.setAttribute("data-theme", "dark")
-        //apply the theme to the sun and moon as it is not applied automatically
-        document.getElementById("sun").setAttribute("data-theme", "dark")
-        document.getElementById("moon").setAttribute("data-theme", "dark")
-    }
-}
 
 
 </script>
