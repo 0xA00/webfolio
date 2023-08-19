@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <img alt="Profile Picture" src="../assets/BNA.png">
-    <h1>Hi I'm 0xa0 !🏳️‍⚧<span id="pronouns">She/Her</span>️</h1>
+    <h1>Hi I'm 0xa0 !<img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px;"><span id="pronouns">She/Her</span>️</h1>
 
     <p>I'm a 20 years old french student in computer science. I'm currently studying at <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a> in Montpellier.</p>
 
