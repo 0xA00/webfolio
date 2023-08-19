@@ -129,8 +129,14 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
 function nightlightmode(){
   if(document.body.getAttribute("data-theme") === "dark"){
         document.body.setAttribute("data-theme", "")
+      //apply the theme to the sun and moon as it is not applied automatically
+        document.getElementById("sun").setAttribute("data-theme", "")
+        document.getElementById("moon").setAttribute("data-theme", "")
     }else{
         document.body.setAttribute("data-theme", "dark")
+        //apply the theme to the sun and moon as it is not applied automatically
+        document.getElementById("sun").setAttribute("data-theme", "dark")
+        document.getElementById("moon").setAttribute("data-theme", "dark")
     }
 }
 
