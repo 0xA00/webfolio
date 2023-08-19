@@ -26,16 +26,23 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
-    width: 100px;
-    height: 50px;
 }
 
 .nightlightmode #moon{
     display: none;
+
+    font-size: 2em;
+    color: #005eda;
+    margin: 10px;
+
 }
 
 .nightlightmode #sun{
     display: block;
+    font-size: 2em;
+    color: #005eda;
+    margin: 10px;
+
 }
 
 
