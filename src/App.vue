@@ -5,29 +5,11 @@
       <router-link style="text-decoration: none" to="/about">About</router-link> |
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
-  <div class="nightlightmode" @click="nightlightmode()">
-      test
-  </div>
+
 
 </template>
 
 <style>
-
-.nightlightmode{
-
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-}
-
-
 
 
 #app {
@@ -74,14 +56,6 @@ a:hover {
 
 <script setup>
 
-import { useDark, useToggle } from "@vueuse/core";
-
-const isDark = useDark();
-const nightlightmode = useToggle(isDark);
-
-
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-
 //check user's os
 let os = navigator.platform
 let os2 = navigator.userAgent
@@ -94,8 +68,5 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     //change body color to error color (gray like)
     document.body.style.backgroundColor = "#121212"
 }
-
-
-
 
 </script>
