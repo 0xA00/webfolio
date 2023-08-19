@@ -50,7 +50,6 @@ export default {
 .BlogPostsSlugs{
     margin-top: 2%;
     margin-bottom: 2%;
-    //make so the divs match the width of the text
     display: inline-block;
     width: 45%;
     border: 1px solid #005eda;
