@@ -131,6 +131,7 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
 }
 
 function nightlightmode(){
+    console.log("nightlightmode")
     document.body.classList.toggle("darktheme")
 }
 
