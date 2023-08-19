@@ -53,10 +53,10 @@ export default {
 
     width: 40%;
     padding: 2%;
-    background: rgba( 216, 216, 216, 0.15 );
+    background: rgba( 164, 164, 164, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
     border-radius: 10px;
 
   @media (max-width: 780px) {
