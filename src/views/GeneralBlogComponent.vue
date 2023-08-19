@@ -53,7 +53,7 @@ export default {
 
     width: 40%;
     padding: 2%;
-    background: rgba( 216, 216, 216, 0.5 );
+    background: rgba( 216, 216, 216, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10.5px );
     -webkit-backdrop-filter: blur( 10.5px );
