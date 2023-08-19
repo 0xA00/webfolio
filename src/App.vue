@@ -6,38 +6,13 @@
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
   <div class="nightlightmode">
-      <div class="nightlightmodebutton" @click="nightlightmode">
-          <div class="circle"></div>
-
-    </div>
+      <font-awesome-icon id='moon' icon="fa-solid fa-moon" />
+      <font-awesome-icon id='sun' icon="fa-solid fa-sun" />
   </div>
 
 </template>
 
 <style>
-
-.nightlightmodebutton{
-    top: 4%;
-    left: 2%;
-    position: relative;
-    width: 95%;
-    height: 90%;
-    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50% ;
-    background: #b9b9b9;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.circle{
-    position: absolute;
-    top: 5%;
-    left: 4%;
-    width: 45%;
-    height: 90%;
-    border-radius: 50%;
-    background: #ffffff;
-    transition: all 0.5s ease;
-}
 
 .nightlightmode{
 
@@ -55,23 +30,30 @@
     height: 50px;
 }
 
+.nightlightmode #moon{
+    display: none;
+}
+
+.nightlightmode #sun{
+    display: block;
+}
 
 
 
 [data-theme=dark]{
     background-color: white;
     transition: all 0.5s ease;
-
-    .circle{
-        left: 50%;
-        transform: translateX(50%);
-    }
-
-    .nightlightmodebutton{
-        background: #4eee8e;
-        transition: all 0.5s ease;
-    }
 }
+
+[data-theme=dark]#sun{
+    display: none;
+}
+
+[data-theme=dark]#moon{
+    display: block;
+}
+
+
 
 
 
@@ -121,6 +103,9 @@ a:hover {
 </style>
 
 <script setup>
+
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+
 //check user's os
 let os = navigator.platform
 let os2 = navigator.userAgent
