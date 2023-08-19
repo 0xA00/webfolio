@@ -5,7 +5,7 @@
       <router-link style="text-decoration: none" to="/about">About</router-link> |
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
-  <div class="nightlightmode">
+  <div class="nightlightmode" @click="nightlightmode()">
       <font-awesome-icon id='moon' icon="fa-solid fa-moon" />
       <font-awesome-icon id='sun' icon="fa-solid fa-sun" />
   </div>
