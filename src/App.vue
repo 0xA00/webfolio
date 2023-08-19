@@ -60,12 +60,12 @@
     background-color: #16161d;
     transition: all 0.5s ease;
 
-    .circle{
+   & .circle{
         left: 50%;
         transform: translateX(50%);
     }
 
-    .nightlightmodebutton{
+    & .nightlightmodebutton{
         background: #4eee8e;
         transition: all 0.5s ease;
     }
