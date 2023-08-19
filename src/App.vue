@@ -1,4 +1,4 @@
-<template>
+<template class="darktheme">
   <router-view/>
   <nav>
       <router-link style="text-decoration: none" to="/">Home</router-link> |
