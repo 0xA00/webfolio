@@ -56,6 +56,22 @@
 }
 
 
+.darktheme{
+    background-color: #16161d;
+    transition: all 0.5s ease;
+
+    .circle{
+        left: 50%;
+        transform: translateX(50%);
+    }
+
+    .nightlightmodebutton{
+        background: #4eee8e;
+        transition: all 0.5s ease;
+    }
+}
+
+
 
 
 #app {
@@ -114,95 +130,9 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     document.body.style.backgroundColor = "#121212"
 }
 
-//get localStorage of activated and if it doesn't exist, set it to false and create it
-let activated = localStorage.getItem("activated") || false
-localStorage.setItem("activated", activated)
-
-//if activated is true, launch a function to change the color of the nightlightmode button when the page is ENTERELY loaded
-console.log(activated)
-if (activated){
-    window.onload= function (){
-        activated = !activated
-        nightlightmode()
-        console.log("activated")
-    }
-
-}
-
 function nightlightmode(){
-//function to change the color of the nightlightmode button
-    activated = !activated
-    localStorage.setItem("activated", activated)
-    //get the nightlightmode button
-    let nightlightmodebutton = document.getElementsByClassName("nightlightmodebutton")[0]
-    //get the circle inside the nightlightmode button
-    let circle = document.getElementsByClassName("circle")[0]
-    //get the body
-    let body = document.body
-    //if the body is not in nightlightmode
-    if (activated){
-        //make the body color dark gray
-        body.style.backgroundColor = "#16161d"
-
-        //change the nightlightmode button color to light green
-        nightlightmodebutton.style.backgroundColor = "#40ec57"
-
-        //change the circle color to white
-        circle.style.backgroundColor = "white"
-        //make the circle go the the right smoothly with a transition translation
-        circle.style.transform = "translateX(100%)"
-        //set every text to white same for h1 and h2
-        let text = document.getElementsByTagName("p")
-        for (let i = 0; i < text.length; i++){
-            text[i].style.color = "rgba(231,238,233,.96)"
-        }
-        let h1 = document.getElementsByTagName("h1")
-        for (let i = 0; i < h1.length; i++){
-            h1[i].style.color = "rgba(231,238,233,.96)"
-        }
-        let h2 = document.getElementsByTagName("h2")
-        for (let i = 0; i < h2.length; i++){
-            h2[i].style.color = "rgba(231,238,233,.96)"
-        }
-        //grayscale the images by 20%
-        let img = document.getElementsByTagName("img")
-        for (let i = 0; i < img.length; i++){
-            img[i].style.filter = "grayscale(20%)"
-        }
-
-    }
-    //if the body is in nightlightmode
-    else{
-        //set body to "white"
-        body.style.backgroundColor = "rgba(231,238,233,.96)"
-
-        //change the nightlightmode button color to white
-        nightlightmodebutton.style.backgroundColor = "#b9b9b9"
-        //change the circle color to black
-        circle.style.backgroundColor = "white"
-        //make the circle go the the left smoothly with a transition translation
-        circle.style.transform = "translateX(4%)"
-        //set black to every text same for h1 and h2
-        let text = document.getElementsByTagName("p")
-        for (let i = 0; i < text.length; i++){
-            text[i].style.color = "#000000"
-        }
-        let h1 = document.getElementsByTagName("h1")
-        for (let i = 0; i < h1.length; i++){
-            h1[i].style.color = "#000000"
-        }
-        let h2 = document.getElementsByTagName("h2")
-        for (let i = 0; i < h2.length; i++){
-            h2[i].style.color = "#000000"
-        }
-
-        //grayscale the images by 0%
-        let img = document.getElementsByTagName("img")
-        for (let i = 0; i < img.length; i++){
-            img[i].style.filter = "grayscale(0%)"
-        }
-
-
-    }
+    document.body.classList.toggle("darktheme")
 }
+
+
 </script>
