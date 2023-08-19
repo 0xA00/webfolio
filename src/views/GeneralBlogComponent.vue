@@ -50,8 +50,8 @@ export default {
 .BlogPostsSlugs{
     margin-top: 2%;
     margin-bottom: 2%;
-    display: inline-block;
-    width: 45%;
+
+    width: 40%;
     border: 1px solid #005eda;
     padding: 2%;
     background: rgba( 34, 33, 33, 0.5 );
