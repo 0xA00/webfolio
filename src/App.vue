@@ -6,6 +6,7 @@
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
 
+  <BackgroundParticles></BackgroundParticles>
 
 </template>
 
@@ -56,6 +57,8 @@ a:hover {
 
 <script setup>
 
+import BackgroundParticles from "./views/BackgroundParticles.vue"
+
 //check user's os
 let os = navigator.platform
 let os2 = navigator.userAgent
@@ -68,5 +71,8 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     //change body color to error color (gray like)
     document.body.style.backgroundColor = "#121212"
 }
+
+
+
 
 </script>
