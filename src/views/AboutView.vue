@@ -43,37 +43,6 @@
   src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
 }
 
-#PFPandName {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  width: 25%;
-}
-
-#PFPandName img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-#PFPandName h1 {
-  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  color: rgba(231, 238, 233, 0.96);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#PFPandName #pronouns {
-  font-size: 0.5em;
-  color: #005eda;
-}
-
-
 
 .about {
   font-family: TASADis-Med, Avenir, Helvetica, Arial, sans-serif;
@@ -109,14 +78,7 @@
   height: 250px;
 }
 
-.DIVglass{
-    background: rgba( 89, 89, 89, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6px );
-    -webkit-backdrop-filter: blur( 6px );
-    border-radius: 40px;
 
-}
 
 
 </style>
