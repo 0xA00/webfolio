@@ -6,7 +6,7 @@
       <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
   </nav>
 
-  <BackgroundParticles></BackgroundParticles>
+
 
 </template>
 
@@ -57,7 +57,6 @@ a:hover {
 
 <script setup>
 
-import BackgroundParticles from "./views/BackgroundParticles.vue"
 
 //check user's os
 let os = navigator.platform
