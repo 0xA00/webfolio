@@ -29,7 +29,7 @@
 
       <div id="kanyeQuote" class="DIVglass">
           <blockquote>
-              <p id="Kanye"></p>
+              <p id="Kanyetext"></p>
               <footer> Kanye West</footer>
           </blockquote>
       </div>
@@ -75,6 +75,35 @@
   src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
 }
 
+#PFPandName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#PFPandName img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#PFPandName h1 {
+  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgba(231, 238, 233, 0.96);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#PFPandName #pronouns {
+  font-size: 0.5em;
+  color: #005eda;
+}
 
 
 
@@ -131,7 +160,7 @@ window.onload = function() {
   fetch('https://api.kanye.rest/')
   .then(response => response.json())
   .then(data => {
-    document.getElementById("Kanye").innerHTML = data.quote;
+    document.getElementById("Kanyetext").innerHTML = "\""+ data.quote+"\"";
   });
 }
 
