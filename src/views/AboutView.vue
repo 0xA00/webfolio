@@ -27,12 +27,7 @@
           <a class="ICONS" href="" ><font-awesome-icon icon="fa-brands fa-discord"/></a>
       </div>
 
-      <div id="kanyeQuote" class="DIVglass">
-          <blockquote>
-              <p id="Kanyetext"></p>
-              <footer> Kanye West</footer>
-          </blockquote>
-      </div>
+      <KanyeQuote></KanyeQuote>
       <!--
     <img alt="Profile Picture" src="../assets/BNA.png">
     <h1>Hi I'm 0xa0 !<img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️</h1>
@@ -79,15 +74,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  width: 25%;
 }
 
 #PFPandName img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   margin-right: 20px;
 }
 
@@ -154,6 +149,7 @@
 </style>
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import KanyeQuote from "@/views/KanyeQuote.vue";
 
 
 window.onload = function() {
