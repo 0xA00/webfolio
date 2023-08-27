@@ -24,7 +24,10 @@
                     .then(response => response.json())
                     .then(data => {
                         this.quote = data.quote;
-                        document.getElementById("Kanyetext").innerHTML = this.quote;
+                        document.getElementById("Kanyetext").innerHTML = "\""+this.quote+"\"";
+                        //put it in italics
+                        document.getElementById("Kanyetext").style.fontStyle = "italic";
+
                     })
                     .catch(error => console.error(error))
             }
