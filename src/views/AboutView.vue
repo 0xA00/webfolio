@@ -84,16 +84,5 @@
 </style>
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import KanyeQuote from "@/views/KanyeQuote.vue";
-
-
-window.onload = function() {
-  fetch('https://api.kanye.rest/')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("Kanyetext").innerHTML = "\""+ data.quote+"\"";
-  });
-}
-
 </script>
 
