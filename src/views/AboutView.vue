@@ -98,7 +98,7 @@ export default {
       meta: [
           {name:'description', content:'About me'},
           {name:'twitter:card', content:'summary_large_image'},
-          {name:'twitter:image:src', content:'https://0xa0.fr/assets/BNA.png'},
+          {name:'twitter:image:src', content:'https://0xa0.dev/a/BNA.png'},
           {name:'twitter:site', content:'@0xa0_'},
       ]
     };
