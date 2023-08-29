@@ -84,17 +84,15 @@
 
 
 </style>
-<script setup>
+<script>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import KanyeQuote from "@/views/KanyeQuote.vue";
 
-//create a script that will set the head for this page
+
 export default {
-  components: {
-    FontAwesomeIcon,
-    KanyeQuote
-  },
-  head() {
+    components: {KanyeQuote},
+
+  head: function() {
     return {
       title: "About",
       meta: [
