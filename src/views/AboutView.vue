@@ -1,4 +1,6 @@
 <template>
+
+
   <div class="about">
     <img alt="Profile Picture" src="../assets/BNA.png">
     <h1>Hi I'm 0xa0 !<img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️</h1>
@@ -85,5 +87,24 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import KanyeQuote from "@/views/KanyeQuote.vue";
+
+//create a script that will set the head for this page
+export default {
+  components: {
+    FontAwesomeIcon,
+    KanyeQuote
+  },
+  head() {
+    return {
+      title: "About",
+      meta: [
+          {name:'description', content:'About me'},
+          {name:'twitter:card', content:'summary_large_image'},
+          {name:'twitter:image:src', content:'https://0xa0.fr/assets/BNA.png'},
+          {name:'twitter:site', content:'@0xa0_'},
+      ]
+    };
+  }
+};
 </script>
 

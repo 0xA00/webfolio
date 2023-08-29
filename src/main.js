@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueHead from 'vue-head'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -20,5 +21,5 @@ import {faSun} from "@fortawesome/free-solid-svg-icons";
 
 library.add(faTwitter, faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faMoon, faSun)
 
-createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).use(router).use(VueHead).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
