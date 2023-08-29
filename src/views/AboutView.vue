@@ -14,8 +14,8 @@
     <span class="ICONS"><font-awesome-icon icon="fa-solid fa-c" /></span>
     <span class="ICONS"><font-awesome-icon icon="fa-brands fa-vuejs" /></span>
 
+<suspense><KanyeQuote></KanyeQuote></suspense>
 
-      <KanyeQuote></KanyeQuote>
 
 
 
