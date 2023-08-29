@@ -2,6 +2,15 @@
 
 
   <div class="about">
+
+      <div class="about__main card">
+          <img alt="Profile Picture" src="https://0xa0.dev/a/BNA.png">
+          <div class="about__inside__main">
+              <h1>Hi I'm 0xa0</h1>
+              <img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️
+          </div>
+      </div>
+      <!--
     <img alt="Profile Picture" src="https://0xa0.dev/a/BNA.png">
 
     <h1>Hi I'm 0xa0 !<img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️</h1>
@@ -28,7 +37,7 @@
     <a class="ICONS" href="=https://steamcommunity.com/id/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-steam" /></a>
     <a class="ICONS" href="https://github.com/0xA00/" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
     <a class="ICONS" href="" ><font-awesome-icon icon="fa-brands fa-discord"/></a>
-
+-->
   </div>
 
 
@@ -68,7 +77,7 @@
 
 .about h1 {
   font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   color: rgba(231, 238, 233, 0.96);
   margin-top: 20px;
@@ -77,8 +86,20 @@
 
 .about img {
   border-radius: 20%;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
+}
+
+.card{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+}
+.about__main{
+    display: flex;
+    flex-direction: row;
 }
 
 
