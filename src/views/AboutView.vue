@@ -84,5 +84,6 @@
 </style>
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import KanyeQuote from "@/views/KanyeQuote.vue";
 </script>
 
