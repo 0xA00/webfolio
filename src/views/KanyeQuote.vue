@@ -25,7 +25,6 @@
                     .then(data => {
                         this.quote = data.quote;
                         document.getElementById("Kanyetext").innerHTML = "\""+this.quote+"\"";
-                        //put it in italics
                         document.getElementById("Kanyetext").style.fontStyle = "italic";
 
                     })

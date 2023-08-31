@@ -3,14 +3,61 @@
 
   <div class="about">
 
-      <div class="about__main card">
+      <div class="card">
           <img alt="Profile Picture" src="https://0xa0.dev/a/BNA.png">
-          <div class="about__inside__main">
-              <h1>Hi I'm 0xa0</h1>
-              <img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️
+          <div id="pronounsandUsername">
+              <h1>Hi ! I'm AxA0 !</h1>
+              <div id="fl">
+                  <img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px">
+                  <h2>She/Her</h2>
+                  ️</div>
+
+          </div>
+
+      </div>
+      <div id="gridlearnandsab">
+          <div class="card" id="grizz">
+              <h1>Language learned</h1>
+                <div class="gridlearned">
+                  <div class="grid-item">
+                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-java" /></span>
+                      <h2>Java</h2>
+                  </div>
+                  <div class="grid-item">
+                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-python" /></span>
+                      <h2>Python</h2>
+                  </div>
+                  <div class="grid-item">
+                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-js" /></span>
+                      <h2>Javascript</h2>
+                 </div>
+              </div>
+        </div>
+          <div class="card" id="SaM">
+            <h1>Something about me</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.</p>
           </div>
       </div>
-      <!--
+
+      <div class="card" id="mediass">
+          <h1>Social medias</h1>
+          <div class="gridlearned">
+              <div class="grid-item">
+                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-discord" /></span>
+                  <h2>Discord</h2>
+              </div>
+              <div class="grid-item">
+                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-twitter" /></span>
+                  <h2>Twitter</h2>
+              </div>
+              <div class="grid-item">
+                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-github" /></span>
+                  <h2>Github</h2>
+              </div>
+      </div>
+          </div>
+
+<!--
     <img alt="Profile Picture" src="https://0xa0.dev/a/BNA.png">
 
     <h1>Hi I'm 0xa0 !<img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px"><span id="pronouns">She/Her</span>️</h1>
@@ -62,12 +109,16 @@
   -moz-osx-font-smoothing: grayscale;
   color: rgba(231, 238, 233, 0.96);
 
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
 }
 
-#pronouns {
-  font-size: 0.5em;
-  color: #005eda;
-}
+
 
 .ICONS {
   font-size: 2em;
@@ -86,22 +137,100 @@
 
 .about img {
   border-radius: 20%;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
+    margin: 10px;
+}
+.gridlearned{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 992px) {
+         grid-template-columns: auto;
+    }
+
+}
+
+#grizz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#SaM{
+    display:flex;
+    flex-direction: column;
+}
+
+#SaM > p {
+    font-size: 1.5em;
+    text-align: left;
+    margin: 10px;
+}
+
+#gridlearnandsab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px 10px 10px 0;
+    margin: 10px 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    @media (max-width: 992px) {
+        grid-template-columns: auto;
+    }
 }
 
 .card{
-    background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6px );
-    -webkit-backdrop-filter: blur( 6px );
+    border: 1px solid #005eda;
+    padding: 10px;
     border-radius: 10px;
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: row;
 }
 .about__main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+#fl{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ #mediass {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+     padding: 10px;
+ }
+
+.grid-item{
+
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+
+
+}
 
 
 

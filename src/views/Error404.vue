@@ -1,11 +1,14 @@
 <script setup>
 
+import KanyeQuote from "@/views/KanyeQuote.vue";
 </script>
 
 <template>
   <div>
     <h1>404</h1>
     <p>Page not found</p>
+
+      <kanye-quote></kanye-quote>
   </div>
 </template>
 
