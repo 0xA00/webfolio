@@ -194,8 +194,8 @@
 }
 
 .card{
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(143, 141, 141, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 143, 141, 141, 0.37 );
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     padding: 10px;
