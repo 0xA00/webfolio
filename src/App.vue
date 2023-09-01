@@ -10,13 +10,13 @@
                             value: '#626262'
                         }
                     },
+                    fullScreen: {
+                      enable: true,
+                      zIndex: 100
+                     },
                     fpsLimit: 120,
                     interactivity: {
                         events: {
-                            onClick: {
-                                enable: true,
-                                mode: 'push'
-                            },
                             resize: true
                         },
                         modes: {
