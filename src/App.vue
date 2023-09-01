@@ -7,7 +7,7 @@
             :options="{
                     background: {
                         color: {
-                            value: '#0d47a1'
+                            value: '#626262'
                         }
                     },
                     fpsLimit: 120,
@@ -16,10 +16,6 @@
                             onClick: {
                                 enable: true,
                                 mode: 'push'
-                            },
-                            onHover: {
-                                enable: true,
-                                mode: 'repulse'
                             },
                             resize: true
                         },
