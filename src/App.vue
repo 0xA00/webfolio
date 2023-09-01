@@ -7,7 +7,7 @@
             :options="{
                     background: {
                         color: {
-                            value: '#626262'
+                            value: '#161616'
                         }
                     },
                     fullScreen: {
