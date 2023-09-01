@@ -12,7 +12,7 @@
                     },
                     fullScreen: {
                       enable: true,
-                      zIndex: 100
+                      zIndex: -1
                      },
                     fpsLimit: 120,
                     interactivity: {
