@@ -49,13 +49,6 @@ const routes = [
         meta: {
             title: 'Blog'
         }
-    },
-    {path: '/perlin',
-    name: 'perlin',
-    component: () => import('../views/FlowField.vue'),
-    meta: {
-        title: 'Perlin'
-    }
     }
 ]
 
