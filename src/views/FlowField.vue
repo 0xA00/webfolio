@@ -1,5 +1,5 @@
 <template>
-<canvas id="canvas" width="window.innerWidth" height="window.innerHeight"></canvas>
+<canvas id="canvas" width="1920" height="1080"></canvas>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ let noiseZ;
 function setup() {
     size = 20;
     noiseZ = 0;
-    canvas = document.querySelector("#canvas");
+    canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     reset();
     window.addEventListener("resize", reset);
