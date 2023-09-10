@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     let sketch = function(p){
-        let canvass= document.getElementById('canvas1')
+
         let w = window.innerWidth
-        let h = window.innerHeight
+        let h = 400
         let cols, rows
         let r, g, b
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            p.createCanvas(w, h, canvass)
+            p.createCanvas(w, h)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
@@ -42,6 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
             r= p.random(255)
             g= p.random(255)
             b= p.random(255)
+
+
+            p.style("position", "fixed")
+            p.style("top", "50%")
+            p.style("left", "50%")
+            p.style("transform", "translate(-50%, -50%)")
+            p.style("z-index", "-1")
+
+
 
 
         }
@@ -172,14 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    canvas{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
 
-    }
 
     h1{
         font-size: 3em;
