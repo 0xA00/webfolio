@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
+            //put canvas style in css
+            canvas.style.width = '100%'
+            canvas.style.height = '100%'
+            canvas.style.position = 'fixed'
+            canvas.style.top = '0'
+            canvas.style.left = '0'
+            canvas.style.zIndex = '-1'
+            canvas.style.transform = 'translate(-50%, -50%)'
 
             flowfield = new Array(cols * rows)
             for (let i = 0; i < 2500; i++){
