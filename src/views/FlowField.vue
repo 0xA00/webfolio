@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    let myp5 = new p5(sketch)
+    let myp5 = new p5(sketch, canvas)
 
     //make responsive
     window.addEventListener('resize', function(){
