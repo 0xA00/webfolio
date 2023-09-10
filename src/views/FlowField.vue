@@ -172,13 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style scoped>
 
-#defaultCanvas0{
-        position:fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-}
+
 
     h1{
         font-size: 3em;
