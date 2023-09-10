@@ -1,5 +1,4 @@
 <template>
-    <div id="canv"></div>
 </template>
 <script>
 import {onMounted, ref} from "vue";
@@ -32,11 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            let canvss= p.createCanvas(w, h)
+            let canvv= p.createCanvas(w, h)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
-            canvss.parent('canv')
+            canvv.setStyle('z-index', '-1')
+            canvv.setStyle('position', 'fixed')
+            canvv.setStyle('top', '50%')
+            canvv.setStyle('left', '50%')
+            canvv.setStyle('transform', 'translate(-50%, -50%)')
+            canvv.setStyle('visibility', 'visible')
 
 
             flowfield = new Array(cols * rows)
@@ -173,14 +177,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style scoped>
-
-#canv{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-}
 
 
     h1{
