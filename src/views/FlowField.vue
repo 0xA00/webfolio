@@ -1,5 +1,5 @@
 <template>
-<canvas id="canvas1"></canvas>
+    <div id="canv"></div>
 </template>
 <script>
 import {onMounted, ref} from "vue";
@@ -8,7 +8,7 @@ export default {
     name: "FlowField"
 }
 
-//add p5
+
 import p5 from "p5";
 
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
-            //put canvas style in css
+            p.parent('canv')
             canvas.style.width = '100%'
             canvas.style.height = '100%'
             canvas.style.position = 'fixed'
