@@ -32,18 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            p.createCanvas(w, h,canvas)
+            let canvss= p.createCanvas(w, h)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
-            p.parent('canv')
-            canvas.style.width = '100%'
-            canvas.style.height = '100%'
-            canvas.style.position = 'fixed'
-            canvas.style.top = '0'
-            canvas.style.left = '0'
-            canvas.style.zIndex = '-1'
-            canvas.style.transform = 'translate(-50%, -50%)'
+            canvss.parent('canv')
+
 
             flowfield = new Array(cols * rows)
             for (let i = 0; i < 2500; i++){
@@ -158,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    let myp5 = new p5(sketch, canvas)
+    let myp5 = new p5(sketch)
 
     //make responsive
     window.addEventListener('resize', function(){
@@ -180,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style scoped>
 
-canvas{
+#canv{
         position: fixed;
         top: 50%;
         left: 50%;
