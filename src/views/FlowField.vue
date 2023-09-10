@@ -15,6 +15,9 @@ import p5 from "p5";
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    //get canvas
+    let canvas = document.getElementById('canvas1')
+
 
     let sketch = function(p){
 
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            p.createCanvas(w, h)
+            p.createCanvas(w, h,canvas)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
@@ -42,13 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             r= p.random(255)
             g= p.random(255)
             b= p.random(255)
-
-
-            p.style("position", "fixed", "top", "50%", "left", "50%", "transform", "translate(-50%, -50%)", "z-index", "-1")
-
-
-
-
 
         }
         class Particle{
@@ -175,6 +171,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style scoped>
+
+#canvas1{
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+}
 
     h1{
         font-size: 3em;
