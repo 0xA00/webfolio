@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     let sketch = function(p){
-
+let canvass= document.getElementById('canvas1')
         let w = window.innerWidth
         let h = window.innerHeight
         let cols, rows
@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            p.createCanvas(w, h, document.getElementById('canvas1'))
+            p.createCanvas(w, h, canvass)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
 
             flowfield = new Array(cols * rows)
-            for (let i = 0; i < 5000; i++){
+            for (let i = 0; i < 2500; i++){
                 particles[i] = new Particle()
             }
 
