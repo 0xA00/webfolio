@@ -15,9 +15,9 @@ import p5 from "p5";
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    let canvass= document.getElementById('canvas1')
-    let sketch = function(p){
 
+    let sketch = function(p){
+        let canvass= document.getElementById('canvas1')
         let w = window.innerWidth
         let h = window.innerHeight
         let cols, rows
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    let myp5 = new p5(sketch, canvass)
+    let myp5 = new p5(sketch)
 
     //make responsive
     window.addEventListener('resize', function(){
