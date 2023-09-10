@@ -44,11 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
             b= p.random(255)
 
 
-            p.style("position", "fixed")
-            p.style("top", "50%")
-            p.style("left", "50%")
-            p.style("transform", "translate(-50%, -50%)")
-            p.style("z-index", "-1")
+            p.style("position", "fixed", "top", "50%", "left", "50%", "transform", "translate(-50%, -50%)", "z-index", "-1")
+
 
 
 
@@ -178,10 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style scoped>
-
-
-
-
 
     h1{
         font-size: 3em;
