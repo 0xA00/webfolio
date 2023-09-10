@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style scoped>
 
-#canvas1{
+#defaultCanvas0{
         position:fixed;
         top: 50%;
         left: 50%;
