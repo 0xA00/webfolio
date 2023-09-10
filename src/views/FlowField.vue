@@ -150,6 +150,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let myp5 = new p5(sketch, canvass)
 
+    //make responsive
+    window.addEventListener('resize', function(){
+        myp5.resizeCanvas(window.innerWidth, window.innerHeight)
+    })
+
+    //change size when router changes
+    window.addEventListener('router-view-change', function(){
+        myp5.resizeCanvas(window.innerWidth, window.innerHeight)
+    })
 });
 
 
