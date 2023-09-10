@@ -35,12 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
-            canvv.setStyle('z-index', '-1')
-            canvv.setStyle('position', 'fixed')
-            canvv.setStyle('top', '50%')
-            canvv.setStyle('left', '50%')
-            canvv.setStyle('transform', 'translate(-50%, -50%)')
-            canvv.setStyle('visibility', 'visible')
+
 
 
             flowfield = new Array(cols * rows)
