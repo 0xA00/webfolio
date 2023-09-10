@@ -1,80 +1,6 @@
 <template>
 
-    <vue-particles
-            id="tsparticles"
-            :particlesInit="particlesInit"
-            :particlesLoaded="particlesLoaded"
-            :options="{
-                    background: {
-                        color: {
-                            value: '#161616'
-                        }
-                    },
-                    fullScreen: {
-                      enable: true,
-                      zIndex: -1
-                     },
-                    fpsLimit: 120,
-                    interactivity: {
-                        events: {
-                            resize: true
-                        },
-                        modes: {
-                            bubble: {
-                                distance: 400,
-                                duration: 2,
-                                opacity: 0.8,
-                                size: 40
-                            },
-                            push: {
-                                quantity: 4
-                            },
-                            repulse: {
-                                distance: 200,
-                                duration: 0.4
-                            }
-                        }
-                    },
-                    particles: {
-                        color: {
-                            value: '#ffffff'
-                        },
-                        links: {
-                            color: '#ffffff',
-                            distance: 150,
-                            enable: true,
-                            opacity: 0.5,
-                            width: 1
-                        },
-                        move: {
-                            direction: 'none',
-                            enable: true,
-                            outMode: 'bounce',
-                            random: false,
-                            speed: 6,
-                            straight: false
-                        },
-                        number: {
-                            density: {
-                                enable: true,
-                                area: 800
-                            },
-                            value: 80
-                        },
-                        opacity: {
-                            value: 0.5
-                        },
-                        shape: {
-                            type: 'circle'
-                        },
-                        size: {
-                            random: true,
-                            value: 5
-                        }
-                    },
-                    detectRetina: true
-                }"
-    />
+    <FlowField></FlowField>
   <router-view/>
   <nav>
       <router-link style="text-decoration: none" to="/">Home</router-link> |
@@ -88,14 +14,13 @@
 
 <style>
 
-
 #app {
     margin-left: 5%;
     margin-top:5%;
 }
 
 body{
-  background-color: #16161d;
+  background-color: black;
     transition: all 0.5s ease;
 }
 
@@ -135,6 +60,8 @@ a:hover {
 
 
 //check user's os
+import FlowField from "@/views/FlowField.vue";
+
 let os = navigator.platform
 let os2 = navigator.userAgent
 //if user is on Chrome AND on Linux, then block access to the website
@@ -146,19 +73,6 @@ if (os.includes("Linux") && !os2.includes("Firefox")){
     //change body color to error color (gray like)
     document.body.style.backgroundColor = "#121212"
 }
-
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-
-const particlesInit = async engine => {
-    //await loadFull(engine);
-    await loadSlim(engine);
-};
-
-const particlesLoaded = async container => {
-    console.log("Particles container loaded", container);
-};
-
 
 
 
