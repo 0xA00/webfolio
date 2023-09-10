@@ -15,7 +15,7 @@ import p5 from "p5";
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    //get canvas
+
     let canvas = document.getElementById('canvas1')
 
 
@@ -172,6 +172,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style scoped>
 
+canvas{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+}
 
 
     h1{
