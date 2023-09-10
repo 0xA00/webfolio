@@ -1,6 +1,5 @@
 <template>
 <canvas id="canvas1"></canvas>
-
 </template>
 <script>
 import {onMounted, ref} from "vue";
@@ -16,9 +15,9 @@ import p5 from "p5";
 
 document.addEventListener('DOMContentLoaded', function() {
 
-
+    let canvass= document.getElementById('canvas1')
     let sketch = function(p){
-let canvass= document.getElementById('canvas1')
+
         let w = window.innerWidth
         let h = window.innerHeight
         let cols, rows
@@ -149,7 +148,7 @@ let canvass= document.getElementById('canvas1')
 
     }
 
-    let myp5 = new p5(sketch)
+    let myp5 = new p5(sketch, canvass)
 
 });
 
