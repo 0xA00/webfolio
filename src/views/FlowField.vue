@@ -1,4 +1,5 @@
 <template>
+  <canvas id="canvas1"></canvas>
 </template>
 <script>
 import {onMounted, ref} from "vue";
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            let canvv= p.createCanvas(w, h,canvas)
+            p.createCanvas(w, h,canvas)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
@@ -173,6 +174,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style scoped>
+
+#canvas1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+}
 
 
     h1{
