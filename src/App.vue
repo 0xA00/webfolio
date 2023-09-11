@@ -4,8 +4,8 @@
   <router-view/>
   <nav>
       <router-link style="text-decoration: none" to="/">Home</router-link> |
-      <router-link style="text-decoration: none" to="/about">About</router-link> |
-      <router-link style="text-decoration: none" to="/blogs">Blog</router-link>
+      <router-link style="text-decoration: none" to="/about">About</router-link> <!--|
+      <router-link style="text-decoration: none" to="/blogs">Blog</router-link> -->
   </nav>
 
 
