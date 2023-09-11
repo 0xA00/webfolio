@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
-            canvv.parent('app')
+            canvv.parent('#app')
 
 
 
