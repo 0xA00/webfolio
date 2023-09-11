@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let sketch = function(p){
 
         let w = window.innerWidth
-        let h = 400
+        let h = window.innerHeight
         let cols, rows
         let r, g, b
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.pos = p.createVector(p.random(w), p.random(h))
                 this.vel = p5.Vector.random2D()
                 this.acc = p.createVector(0, 0)
-                this.maxSpeed = 3
+                this.maxSpeed = 4
                 this.prevPos = this.pos.copy();
 
 
