@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let flowfield
 
         p.setup = function (){
-            let canvv= p.createCanvas(w, h)
+            let canvv= p.createCanvas(w, h,canvas)
             p.background(22,22,29)
             cols= p.floor(w/10)
             rows = p.floor(h/10)
+            canvv.parent('app')
 
 
 
@@ -157,11 +158,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function(){
         myp5.resizeCanvas(window.innerWidth, window.innerHeight)
     })
-
+/*
     //change size when router changes
     window.addEventListener('router-view-change', function(){
         myp5.resizeCanvas(window.innerWidth, window.innerHeight)
-    })
+    })*/
 });
 
 
