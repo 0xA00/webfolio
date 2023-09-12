@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.pos = p.createVector(p.random(w), p.random(h))
                 this.vel = p5.Vector.random2D()
                 this.acc = p.createVector(0, 0)
-                this.maxSpeed = 4
+                this.maxSpeed = 3
                 this.prevPos = this.pos.copy();
 
 
@@ -73,15 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             show(){
-                //make the particule fade away with time like a trail
-                //make rgb values random by 1
-                r += p.random(-1, 1)
-                g += p.random(-1, 1)
-                b += p.random(-1, 1)
-                //make sure the values are between 0 and 255
-                r = p.constrain(r, 0, 255)
-                g = p.constrain(g, 0, 255)
-                b = p.constrain(b, 0, 255)
                 p.stroke(r, g, b)
                 p.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
                 p.point(this.pos.x, this.pos.y)
