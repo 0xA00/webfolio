@@ -1,11 +1,11 @@
 <template>
   <div id="BlogPosts">
-
     <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
       <router-link style="text-decoration: none" :to="{path:'/blog/'+post}">
         <SlugBlog :Pathjson="post"></SlugBlog>
       </router-link>
   </div>
+
 
   </div>
 
@@ -14,15 +14,32 @@
 <script>
 
 
+
 import SlugBlog from "@/views/SlugBlog.vue";
-/*
+
+
+document.addEventListener('DOMContentLoaded', async function () {
+    let nbOfPosts = []
+
+
+    const response = await fetch(`https://0xa0.dev/blog/blogs.json`, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    })
+
+
+    nbOfPosts = await response.json()
+    nbOfPosts = nbOfPosts.posts
+
+    this.nbOfPosts = nbOfPosts
+
+    console.log(nbOfPosts)
+})
 //get blogs.json in order to get the number of posts
-let nbOfPosts = []
-const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
-nbOfPosts = await response.json()
-let nbOfPostsLength = nbOfPosts.length
-nbOfPosts = nbOfPosts.posts
-*/
+
+
 
 
 
@@ -33,11 +50,19 @@ export default {
     components: {SlugBlog},
     data() {
         return {
-            nbOfPosts: nbOfPosts,
-            nbOfPostsLength: nbOfPostsLength
+            nbOfPosts: this.nbOfPosts
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
 </script>
 

@@ -32,7 +32,7 @@ const routes = [
             title: 'Home'
         }
     }
-    ,/*
+    ,
     {
         path: '/blogs',
         name: 'blogs',
@@ -49,7 +49,7 @@ const routes = [
         meta: {
             title: 'Blog'
         }
-    }*/
+    }
 ]
 
 const router = createRouter({
