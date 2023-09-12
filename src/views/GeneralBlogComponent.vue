@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     nbOfPosts = await response.json()
     nbOfPosts = nbOfPosts.posts
-
+console.log(nbOfPosts)
     this.nbOfPosts = nbOfPosts
 
     console.log(nbOfPosts)
 })
-//get blogs.json in order to get the number of posts
+
 
 
 

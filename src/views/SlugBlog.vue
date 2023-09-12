@@ -8,6 +8,7 @@
 
 <script setup>
 
+import { defineProps } from 'vue'
 const slug = defineProps(['Pathjson'])
 let title
 let date
