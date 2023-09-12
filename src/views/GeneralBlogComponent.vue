@@ -22,12 +22,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     let nbOfPosts = []
 
 
-    const response = await fetch(`https://0xa0.dev/blog/blogs.json`, {
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
-    })
+    const response = await fetch(`https://0xa0.dev/blog/blogs.json`)
 
 
     nbOfPosts = await response.json()
