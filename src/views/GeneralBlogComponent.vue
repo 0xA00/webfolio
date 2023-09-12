@@ -28,7 +28,7 @@ import SlugBlog from "@/views/SlugBlog.vue";
     nbOfPosts = await response.json()
     nbOfPosts = nbOfPosts.posts
 
-    this.nbOfPosts = nbOfPosts
+
 
 
 
@@ -44,7 +44,7 @@ export default {
     components: {SlugBlog},
     data() {
         return {
-            nbOfPosts: this.nbOfPosts
+            nbOfPosts: nbOfPosts
         }
     }
 }
