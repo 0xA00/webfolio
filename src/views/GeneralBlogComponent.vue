@@ -18,7 +18,7 @@
 import SlugBlog from "@/views/SlugBlog.vue";
 
 
-document.addEventListener('DOMContentLoaded', async function () {
+
     let nbOfPosts = []
 
 
@@ -27,11 +27,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     nbOfPosts = await response.json()
     nbOfPosts = nbOfPosts.posts
-console.log(nbOfPosts)
+
     this.nbOfPosts = nbOfPosts
 
-    console.log(nbOfPosts)
-})
+
 
 
 
