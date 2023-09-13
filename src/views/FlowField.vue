@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 p.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
                 p.point(this.pos.x, this.pos.y)
                 this.updatePrev()
-                p.strokeWeight(0.2)
+                p.strokeWeight(1)
 
             }
 
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     let index= x + y * cols
                     let angle = p.noise(xoff, yoff, p.frameCount/100)*p.TWO_PI*4
                     let v = p5.Vector.fromAngle(angle)
-                    v.setMag(0.5)
+                    v.setMag(0.25)
                     flowfield[index] = v
                     xoff += 0.1
                 }
