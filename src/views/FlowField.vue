@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let sketch = function(p){
 
         let w = window.innerWidth
-        let h = 450
+        let h = 400
         let cols, rows
         let r, g, b
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             flowfield = new Array(cols * rows)
-            for (let i = 0; i < 2500; i++){
+            for (let i = 0; i < 1750; i++){
                 particles[i] = new Particle()
             }
 
