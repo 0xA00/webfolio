@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let sketch = function(p){
 
         let w = window.innerWidth
-        let h = window.innerHeight
+        let h = 450
         let cols, rows
         let r, g, b
 
