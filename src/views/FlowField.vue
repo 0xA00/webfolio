@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 //then floor it to get an integer
                 //then map it to a value between 0 and 255
                 r = p.floor(p.map(this.pos.x, 0, w, 0, 255))
-                g = p.floor(p.map(this.pos.y, 0, h, 0, 255))
+                g = p.floor(p.map(this.pos.x, 0, h, 0, 255))
                 b = p.floor(p.map(this.pos.x, 0, w, 255, 0))
 
                 p.stroke(r, g, b)
