@@ -35,7 +35,16 @@
         </div>
           <div class="card" id="SaM">
             <h1>Something about me</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.</p>
+              <p>Hi I'm 0xa0! I'm a 20 years old french student in computer science. I'm currently studying at
+                  <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a>
+                  in Montpellier
+              </p>
+              <p>
+                  I'm passionate about computer science, especially about low-level programming and security. I'm also interested in web development and I'm currently learning it.
+              </p>
+              <p>
+                  I really like to create things on Minecraft as mods,plugins or even redstone contraptions.
+              </p>
           </div>
       </div>
 
