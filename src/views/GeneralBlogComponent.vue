@@ -18,41 +18,24 @@
 import SlugBlog from "@/views/SlugBlog.vue";
 
 
-
-    let nbOfPosts = []
-
-
-    const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
-
-
-    nbOfPosts = await response.json()
-    nbOfPosts = nbOfPosts.posts
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default {
     components: {SlugBlog},
     data() {
         return {
-            nbOfPosts: nbOfPosts
+            nbOfPosts: this.nbOfPosts
         }
-    }
+    },
+    beforeRouteEnter(to, from, next) {
+        next(async vm => {
+            // get response from fetch and set it to vm.response
+            let nbOfPosts = []
+            const response = await fetch(`https://0xa0.dev/blog/blogJson/blogs.json`)
+            nbOfPosts = await response.json()
+            nbOfPosts = nbOfPosts.posts
+            vm.nbOfPosts = nbOfPosts
+        })
+    },
 }
-
-
-
-
-
 
 
 
