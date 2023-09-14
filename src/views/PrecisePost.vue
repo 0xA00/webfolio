@@ -1,10 +1,13 @@
 <template>
+    <suspense>
+        <template #fallback>
+        </template>
 <div id="POST">
   <h1 v-html="titlepost"></h1>
   <div id="content" v-html="content"></div>
   <h3 id="datepost" v-html="datepost"></h3>
 </div>
-
+    </suspense>
 </template>
 
 <script setup>

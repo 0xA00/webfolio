@@ -21,6 +21,7 @@
                 </div>
             </div>
         </template>
+
         <div id="BlogPosts">
             <div class="BlogPostsSlugs" v-for="(post) in nbOfPosts" :key="post">
                 <router-link style="text-decoration: none" :to="{path:'/blog/'+post}">
