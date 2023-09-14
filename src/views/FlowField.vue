@@ -37,17 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
             cols= p.floor(w/10)
             rows = p.floor(h/10)
 
-
-
-
             flowfield = new Array(cols * rows)
             for (let i = 0; i < 1750; i++){
                 particles[i] = new Particle()
             }
 
-            r= p.random(255)
-            g= p.random(255)
-            b= p.random(255)
+
+
 
         }
         class Particle{
@@ -73,6 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             show(){
+                //take the horizontal position of the particle and divide it by the width of the canvas
+                //then multiply it by 255 to get a value between 0 and 255
+                //then floor it to get an integer
+                //then map it to a value between 0 and 255
+                r = p.floor(p.map(this.pos.x, 0, w, 0, 255))
+                g = p.floor(p.map(this.pos.y, 0, h, 0, 255))
+                b = p.floor(p.map(this.pos.x, 0, w, 255, 0))
+
                 p.stroke(r, g, b)
                 p.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
                 p.point(this.pos.x, this.pos.y)
