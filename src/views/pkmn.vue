@@ -1,49 +1,42 @@
 <template>
-<suspense>
-    <template #fallback>
-    </template>
-<img :src="front" alt="front" style="width: 500px">
-</suspense>
+    <Head>
+        <title> {{$route.params.id}}</title>
+
+        <meta property="og:image" content="{{poke}}">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:image:src" content="{{poke}}">
+
+
+    </Head>
 </template>
 
-<script>
-import {onBeforeMount, onMounted} from "vue";
+
+<script setup>
+import {onBeforeMount, onMounted, ref} from "vue";
+
+import { Head } from '@vueuse/head'
+
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+let poke = ref("")
+
+onBeforeMount(async () => {
+    const pkmn = await fetch(`https://pokeapi.co/api/v2/pokemon/${route.params.id}`)
+    const pkmnjson = await pkmn.json()
+    //get sprites
+    const pkmnimg = pkmnjson.sprites.front_default
+    //get name
+    const pkmnname = pkmnjson.name
+    //create ref to pkmnimg
+    poke.value = pkmnimg
+})
 
 
-export default {
-    created() {
-        this.initialize()
 
-    }
-    ,methods: {
-        async initialize() {
-            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/` + this.$route.params.id)
-            const data = await response.json()
-            //get sprites
-            this.sprites = data.sprites
 
-            //get front sprite
-            this.front = this.sprites.front_default
-            console.log(this.front)
-        }
-    }
-    ,data: function () {
-        return {
-            front: this.front
-        }
-    },
-    head: function () {
-        return {
-            title: "Pokemon",
-            meta: [
-                {property: 'description', content: 'Pokemon'},
-                {property: 'twitter:card', content: 'summary_large_image'},
-                {property: 'twitter:image:src', content: this.front},
-                {property: 'twitter:site', content: '@0xa0_'},
-            ]
-        };
-    }
-}
+
+
 </script>
 
 <style scoped>
