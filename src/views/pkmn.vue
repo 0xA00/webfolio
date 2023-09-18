@@ -27,10 +27,10 @@ export default defineComponent({
             meta: [
                 {"http-equiv": "X-UA-Compatible", content: "IE=edge"},
                 {property:'og:image', content: siteData.pkmn},
-                {name:"theme-color", content:"#42b983"},
-                {name:"viewport", content:"width=device-width,initial-scale=1.0"},
-                {name:"twitter:card", content:"summary_large_image"},
-                {name:"twitter:image", content:siteData.pkmn},
+                {property:"theme-color", content:"#42b983"},
+                {property:"viewport", content:"width=device-width,initial-scale=1.0"},
+                {property:"twitter:card", content:"summary_large_image"},
+                {property:"twitter:image", content:siteData.pkmn},
 
             ]
         })
