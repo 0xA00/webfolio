@@ -25,9 +25,15 @@ export default defineComponent({
         useHead({
             title: computed(() => siteData.title),
             meta: [
+                {"http-equiv": "X-UA-Compatible", content: "IE=edge"},
                 {property:'og:image', content: siteData.pkmn},
-                {property:'twitter:card', content:'summary_large_image'},
-                {property:'twitter:image:src', content: siteData.pkmn},
+                {property:'twitter:site', content:'@0xa0_'},
+                {name:"theme-color", content:"#42b983"},
+                {name:"viewport", content:"width=device-width,initial-scale=1.0"},
+                {name:"description", content:"Pokemon from the pokedex"},
+                {name:"twitter:card", content:"summary_large_image"},
+                {name:"twitter:image:src", content:siteData.pkmn},
+
             ]
         })
     }
