@@ -25,8 +25,9 @@ export default defineComponent({
         useHead({
             title: computed(() => siteData.title),
             meta: [
-                {name:'twitter:card', content:'summary_large_image'},
-                {name:'twitter:image:src', content: siteData.pkmn},
+                {property:'og:image', content: siteData.pkmn},
+                {property:'twitter:card', content:'summary_large_image'},
+                {property:'twitter:image:src', content: siteData.pkmn},
             ]
         })
     }

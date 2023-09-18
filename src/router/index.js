@@ -54,7 +54,9 @@ const routes = [
         path:'/pkmn/:id',
         name:'pkmn',
 component: () => import('../views/pkmn.vue'),
-
+        meta: {
+            title: 'Pokemon'
+        }
     }
 ]
 
