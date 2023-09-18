@@ -1,35 +1,35 @@
 <template>
-    <Head>
-        <title> {{$route.params.id}}</title>
 
-        <meta property="og:image" content="https://0xa0.dev/a/BNA.png">
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:image:src" content="https://0xa0.dev/a/BNA.png">
-
-
-    </Head>
 </template>
 
 
-<script setup>
-import {onBeforeMount, onMounted, ref} from "vue";
+<script>
+import {computed, defineComponent, onBeforeMount, onBeforeUnmount, onMounted, reactive, ref} from "vue";
 
-import { Head } from '@vueuse/head'
+import {Head, useHead} from '@vueuse/head'
 
 import { useRoute } from 'vue-router';
+export default defineComponent({
+    setup() {
+        const route = useRoute()
+        const siteData = reactive({
+            title: route.params.title,
+            pkmn: fetch(`https://pokeapi.co/api/v2/pokemon/${route.params.id}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.sprites.front_default)
+                    return data.sprites.front_default
+                })
+        })
 
-const route = useRoute();
-let poke = ref("")
-
-onBeforeMount(async () => {
-    const pkmn = await fetch(`https://pokeapi.co/api/v2/pokemon/${route.params.id}`)
-    const pkmnjson = await pkmn.json()
-    //get sprites
-    const pkmnimg = pkmnjson.sprites.front_default
-    //get name
-    const pkmnname = pkmnjson.name
-    //create ref to pkmnimg
-    poke.value = pkmnimg
+        useHead({
+            title: computed(() => siteData.title),
+            meta: [
+                {name:'twitter:card', content:'summary_large_image'},
+                {name:'twitter:image:src', content: siteData.pkmn},
+            ]
+        })
+    }
 })
 
 

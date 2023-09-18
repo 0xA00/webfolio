@@ -19,9 +19,9 @@ import {faSun} from "@fortawesome/free-solid-svg-icons";
 
 
 
-
+const head = createHead()
 
 library.add(faTwitter, faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faMoon, faSun)
 
-createApp(App).use(router).use(createHead()).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).use(router).use(head).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
