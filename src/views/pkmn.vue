@@ -2,9 +2,9 @@
     <Head>
         <title> {{$route.params.id}}</title>
 
-        <meta property="og:image" content="{{poke}}">
+        <meta property="og:image" content="https://0xa0.dev/a/BNA.png">
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:image:src" content="{{poke}}">
+        <meta property="twitter:image:src" content="https://0xa0.dev/a/BNA.png">
 
 
     </Head>
