@@ -10,12 +10,10 @@
 import {onBeforeMount, onMounted} from "vue";
 
 
-
-
-
 export default {
     created() {
         this.initialize()
+
     }
     ,methods: {
         async initialize() {
@@ -38,10 +36,10 @@ export default {
         return {
             title: "Pokemon",
             meta: [
-                {name: 'description', content: 'Pokemon'},
-                {name: 'twitter:card', content: 'summary_large_image'},
-                {name: 'twitter:image:src', content: this.front},
-                {name: 'twitter:site', content: '@0xa0_'},
+                {property: 'description', content: 'Pokemon'},
+                {property: 'twitter:card', content: 'summary_large_image'},
+                {property: 'twitter:image:src', content: this.front},
+                {property: 'twitter:site', content: '@0xa0_'},
             ]
         };
     }
