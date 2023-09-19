@@ -31,10 +31,11 @@ export default defineComponent({
         useHead({
             title: computed(() => siteData.title),
             meta: [
-                {name: 'description', content: siteData.description},
                 {name: 'twitter:card', content: 'summary_large_image'},
                 {name: 'twitter:image:src', content: siteData.pkmn},
+                //change size of image ot 1200x600
                 {name: 'twitter:site', content: '@0xa0_'},
+
             ]
         })
     }
