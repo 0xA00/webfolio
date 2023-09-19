@@ -15,20 +15,14 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@vueuse/core": "^10.3.0",
     "@vueuse/head": "^2.0.0",
-    "animejs": "^3.2.1",
     "core-js": "^3.8.3",
     "markdown-it": "^13.0.1",
     "markdown-loader": "^8.0.0",
     "p5": "^1.7.0",
-    "prerender-node": "^3.7.0",
     "showdown": "^2.1.0",
-    "three": "^0.156.1",
-    "tsparticles": "^2.12.0",
-    "tsparticles-slim": "^2.12.0",
     "vue": "^3.2.13",
     "vue-head": "^2.2.0",
-    "vue-router": "^4.0.3",
-    "vue3-particles": "^2.12.0"
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
