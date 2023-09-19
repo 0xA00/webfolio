@@ -32,9 +32,9 @@ export default defineComponent({
             title: computed(() => siteData.title),
             meta: [
                 {name: 'twitter:card', content: 'summary_large_image'},
-                {name: 'twitter:image:src', content: siteData.pkmn},
-                //change size of image ot 1200x600
-                {name: 'twitter:site', content: '@0xa0_'},
+                {name: 'twitter:image', content: siteData.pkmn},
+                //name
+                {name: 'twitter:title', content: siteData.title},
 
             ]
         })
