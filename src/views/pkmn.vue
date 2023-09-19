@@ -4,7 +4,7 @@
 
 
 <script>
-import {computed, defineComponent, onBeforeMount, onBeforeUnmount, onMounted, reactive, ref} from "vue";
+import {computed, defineComponent,reactive} from "vue";
 
 import {Head, useHead} from '@vueuse/head'
 
