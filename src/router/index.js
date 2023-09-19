@@ -6,6 +6,7 @@ import Error404 from "../views/Error404.vue";
 import HomeView from "../views/HomeView.vue";
 import BlogView from "../views/BlogGeneralView.vue";
 import PrecisePost from "../views/PrecisePost.vue";
+import Pkmn from "../views/pkmn.vue";
 
 const routes = [
   {
@@ -53,7 +54,7 @@ const routes = [
     {
         path:'/pkmn/:id',
         name:'pkmn',
-component: () => import('../views/pkmn.vue'),
+        component: Pkmn,
         meta: {
             title: 'Pokemon'
         }
