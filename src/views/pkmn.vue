@@ -30,7 +30,7 @@ export default defineComponent({
                 {property:"theme-color", content:"#42b983"},
                 {property:"viewport", content:"width=device-width,initial-scale=1.0"},
                 {property:"twitter:card", content:"summary_large_image"},
-                {property:"twitter:image", content:siteData.pkmn},
+                {property:"twitter:image:src", content:siteData.pkmn},
 
             ]
         })
