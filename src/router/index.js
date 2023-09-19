@@ -50,6 +50,14 @@ const routes = [
         meta: {
             title: 'Blog'
         }
+    },
+    {
+        path:'/pkmn/:id',
+        name:'pkmn',
+        component: PokemonView,
+        meta: {
+            title: 'Pokemon'
+        }
     }
 ]
 
