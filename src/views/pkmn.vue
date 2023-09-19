@@ -28,6 +28,7 @@ export default defineComponent({
                 {property:'og:image', content: siteData.pkmn},
                 {property:'twitter:card', content:'summary_large_image'},
                 {property:'twitter:image:src', content: siteData.pkmn},
+                {property:'twitter:site', content:'@0xa0_'}
             ]
         })
     }
