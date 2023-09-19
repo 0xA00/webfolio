@@ -31,7 +31,6 @@ export default defineComponent({
         useHead({
             title: computed(() => siteData.title),
             meta: [
-                {"http-equiv": "X-UA-Compatible", content: "IE=edge"},
                 {property:'og:image', content: siteData.pkmn},
                 {property:"theme-color", content:"#42b983"},
                 {property:"viewport", content:"width=device-width,initial-scale=1.0"},
