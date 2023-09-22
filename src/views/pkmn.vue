@@ -27,18 +27,19 @@ export default defineComponent({
                     console.log(data.flavor_text_entries[1].flavor_text+ " V1")
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/\n/g, " ")
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[\W.,?!"'[à-ü][À-Ü] ]/g, " ")
+                    //if � or □ replace with space
+                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/�/g, " ")
+                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/□/g, " ")
+
                     console.log(data.flavor_text_entries[1].flavor_text+ " V2")
                     return data.flavor_text_entries[1].flavor_text
                 }),
             pkmnname: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
                 .then(response => response.json())
                 .then(data => {
-                    //replace every character that is not a letter or a space or a ponctuation with nothing
-                    console.log(data.names[1].name+ " V1")
-                    //replace every \n with a space
                     data.names[1].name = data.names[1].name.replace(/\n/g, " ")
                     data.names[1].name = data.names[1].name.replace(/[^a-zA-Z0-9.,?!"'à-üÀ-Ü ]/g, " ")
-                    console.log(data.names[1].name+ " V2")
+                    console.log(data.names[1].name)
                     return data.names[1].name
                 }),
         })
