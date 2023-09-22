@@ -31,12 +31,23 @@ export default defineComponent({
                     console.log(data.flavor_text_entries[1].flavor_text+ " V2")
                     return data.flavor_text_entries[1].flavor_text
                 }),
+            pkmnname: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
+                .then(response => response.json())
+                .then(data => {
+                    //replace every character that is not a letter or a space or a ponctuation with nothing
+                    console.log(data.names[1].name+ " V1")
+                    //replace every \n with a space
+                    data.names[1].name = data.names[1].name.replace(/\n/g, " ")
+                    data.names[1].name = data.names[1].name.replace(/[^a-zA-Z0-9.,?!"' ]/g, " ")
+                    console.log(data.names[1].name+ " V2")
+                    return data.names[1].name
+                }),
         })
 
         useHead({
-            title: computed(() => siteData.title),
+            title: computed(() => siteData.pkmnname),
             meta: [
-                {property: 'og:title', content: siteData.title},
+                {property: 'og:title', content: siteData.pkmnname},
                 {property: 'og:image', content: siteData.pkmn},
                 {property: 'og:description', content: siteData.pkmndescEN},
                 {property: 'og:type', content: 'website'},
