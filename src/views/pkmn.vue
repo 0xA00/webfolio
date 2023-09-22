@@ -20,21 +20,25 @@ export default defineComponent({
                     console.log(data.sprites.front_default)
                     return data.sprites.front_default
                 }),
-            description: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
+            pkmndescEN: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.flavor_text_entries[0].flavor_text)
-                    return data.flavor_text_entries[0].flavor_text
-                })
+                    console.log(data.flavor_text_entries[1].flavor_text)
+                    return data.flavor_text_entries[1].flavor_text
+                }),
         })
 
         useHead({
             title: computed(() => siteData.title),
             meta: [
-                {name: 'twitter:card', content: 'summary_large_image'},
-                {name: 'twitter:image', content: siteData.pkmn},
-                //name
-                {name: 'twitter:title', content: siteData.title},
+                {property: 'og:title', content: siteData.title},
+                {property: 'og:image', content: siteData.pkmn},
+                {property: 'og:description', content: siteData.pkmndescEN},
+                {property: 'og:type', content: 'website'},
+                {name: 'theme-color', content: '#42b983'},
+
+
+
 
             ]
         })
