@@ -44,7 +44,7 @@ export default defineComponent({
         })
 
         useHead({
-            title: computed(() => siteData.pkmnname),
+            title: computed(() => route.params.id),
             meta: [
                 {property: 'og:title', content: siteData.pkmnname},
                 {property: 'og:image', content: siteData.pkmn},
