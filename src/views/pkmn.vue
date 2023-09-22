@@ -23,8 +23,8 @@ export default defineComponent({
             pkmndescEN: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
                 .then(response => response.json())
                 .then(data => {
-                    //replace every character that is not a letter or a space with nothing
-                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[^a-zA-Z ]/g, "")
+                    //replace every character that is not a letter or a space or a ponctuation with nothing
+                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[^a-zA-Z0-9.,?!"' ]/g, "")
                     return data.flavor_text_entries[1].flavor_text
                 }),
         })
