@@ -37,7 +37,7 @@ export default defineComponent({
                     console.log(data.names[1].name+ " V1")
                     //replace every \n with a space
                     data.names[1].name = data.names[1].name.replace(/\n/g, " ")
-                    data.names[1].name = data.names[1].name.replace(/[^a-zA-Z0-9.,?!"' ]/g, " ")
+                    data.names[1].name = data.names[1].name.replace(/[^a-zA-Z0-9.,?!"'à-üÀ-Ü ]/g, " ")
                     console.log(data.names[1].name+ " V2")
                     return data.names[1].name
                 }),
