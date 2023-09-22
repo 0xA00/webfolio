@@ -24,7 +24,9 @@ export default defineComponent({
                 .then(response => response.json())
                 .then(data => {
                     //replace every character that is not a letter or a space or a ponctuation with nothing
+                    console.log(data.flavor_text_entries[1].flavor_text+ " V1")
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[^a-zA-Z0-9.,?!"' ]/g, "")
+                    console.log(data.flavor_text_entries[1].flavor_text+ " V2")
                     return data.flavor_text_entries[1].flavor_text
                 }),
         })
