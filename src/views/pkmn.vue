@@ -24,6 +24,8 @@ export default defineComponent({
                 .then(response => response.json())
                 .then(data => {
                     //replace every \n with <br>
+                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/(?:\r\n|\r|\n)/g, '<br>')
+                    console.log(data.flavor_text_entries[1].flavor_text)
                     return data.flavor_text_entries[1].flavor_text
                 }),
         })
