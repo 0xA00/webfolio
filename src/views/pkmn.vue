@@ -23,7 +23,7 @@ export default defineComponent({
             pkmndescEN: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.flavor_text_entries[1].flavor_text)
+                    //replace every \n with <br>
                     return data.flavor_text_entries[1].flavor_text
                 }),
         })

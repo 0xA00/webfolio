@@ -62,18 +62,5 @@ a:hover {
 //check user's os
 import FlowField from "@/views/FlowField.vue";
 
-let os = navigator.platform
-let os2 = navigator.userAgent
-//if user is on Chrome AND on Linux, then block access to the website
-if (os.includes("Linux") && !os2.includes("Firefox")){
-    //delete all the body
-    document.body.innerHTML = ""
-    //then display this message
-    document.body.innerHTML = "<pre style=\"word-wrap: break-word; white-space: pre-wrap; color: #ffffff\">Sorry, but this website is not available on Linux while using another browser than Firefox. Please use Firefox.</pre>"
-    //change body color to error color (gray like)
-    document.body.style.backgroundColor = "#121212"
-}
-
-
 
 </script>
