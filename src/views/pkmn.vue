@@ -27,9 +27,10 @@ export default defineComponent({
                     console.log(data.flavor_text_entries[1].flavor_text+ " V1")
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/\n/g, " ")
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[\W.,?!"'[à-ü][À-Ü] ]/g, " ")
-                    //if � or □ replace with space
-                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/�/g, " ")
+                    //if □ replace with space
                     data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/□/g, " ")
+                    //if anything that is not a letter or a ponctuation or a space or a letter with accent replace with space
+                    data.flavor_text_entries[1].flavor_text = data.flavor_text_entries[1].flavor_text.replace(/[^a-zA-Z0-9.,?!"'à-üÀ-Ü ]/g, " ")
 
                     console.log(data.flavor_text_entries[1].flavor_text+ " V2")
                     return data.flavor_text_entries[1].flavor_text
@@ -42,6 +43,12 @@ export default defineComponent({
                     console.log(data.names[1].name)
                     return data.names[1].name
                 }),
+            pkmncolor: fetch(`https://pokeapi.co/api/v2/pokemon-species/${route.params.id}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.color.name)
+                    return data.color.name
+                }),
         })
 
         useHead({
@@ -51,7 +58,7 @@ export default defineComponent({
                 {property: 'og:image', content: siteData.pkmn},
                 {property: 'og:description', content: siteData.pkmndescEN},
                 {property: 'og:type', content: 'website'},
-                {name: 'theme-color', content: '#42b983'},
+                {name: 'theme-color', content: siteData.pkmncolor},
 
 
 
