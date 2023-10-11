@@ -1,6 +1,6 @@
 <template>
 
-    <FlowField></FlowField>
+<tpgfpattern></tpgfpattern>
   <router-view/>
   <nav>
       <router-link style="text-decoration: none" to="/">Home</router-link> |
@@ -59,8 +59,8 @@ a:hover {
 <script setup>
 
 
-//check user's os
-import FlowField from "@/views/FlowField.vue";
+
+import Tpgfpattern from "@/views/tpgfpattern.vue";
 
 
 </script>
