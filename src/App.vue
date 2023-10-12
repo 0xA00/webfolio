@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-    color: #005eda;
+    color: #C6AC8F;
 }
 h1 {
     font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
@@ -44,11 +44,11 @@ h1 {
     color: #ffffff;
 }
 a {
-    color: #005eda;
+    color: #C6AC8F;
     text-decoration: none;
 }
 a:hover {
-    color: #005eda;
+    color: #C6AC8F;
     text-decoration: underline;
 }
 

@@ -131,7 +131,7 @@
 
 .ICONS {
   font-size: 2em;
-  color: #005eda;
+  color: #C6AC8F;
   margin-right: 10px;
 }
 

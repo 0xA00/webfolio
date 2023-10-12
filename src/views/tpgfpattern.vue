@@ -140,7 +140,7 @@ void main() {
         fragmentShader: fragmentShader
     })
     //create the plane 
-    const plane = new THREE.PlaneGeometry(6  , 2)
+    const plane = new THREE.PlaneGeometry(6  , 1.5)
     const mesh = new THREE.Mesh(plane, material)
    
     
