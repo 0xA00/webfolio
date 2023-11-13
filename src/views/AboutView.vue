@@ -51,7 +51,7 @@
       <div class="card" id="mediass">
           <h1>Social medias</h1>
           <div class="gridlearned">
-              <div class="grid-item">
+              <div class="grid-item" href="https://discord.0xa0.dev/">
                   <span class="ICONS"><font-awesome-icon icon="fa-brands fa-discord" /></span>
                   <h2>Discord</h2>
               </div>
