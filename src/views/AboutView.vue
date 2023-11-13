@@ -51,10 +51,12 @@
       <div class="card" id="mediass">
           <h1>Social medias</h1>
           <div class="gridlearned">
-              <div class="grid-item" href="https://discord.0xa0.dev/">
+            <a href="https://discord.0xa0.dev/" target="_blank">
+              <div class="grid-item" >
                   <span class="ICONS"><font-awesome-icon icon="fa-brands fa-discord" /></span>
                   <h2>Discord</h2>
               </div>
+                </a>
               <div class="grid-item">
                   <span class="ICONS"><font-awesome-icon icon="fa-brands fa-twitter" /></span>
                   <h2>Twitter</h2>
@@ -79,6 +81,11 @@
 @font-face {
     font-family: "GeistMono";
     src: url(../font/Geist.Mono/GeistMono-Regular.otf);
+}
+
+.gridlearned > a {
+    text-decoration: none;
+    color: rgba(231, 238, 233, 0.96);
 }
 
 
