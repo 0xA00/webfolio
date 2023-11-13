@@ -26,7 +26,23 @@ body{
 
 nav {
   padding: 30px;
-  font-family: TASADis-Bold, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "GeistMono", Avenir, Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 30px 30px 30px 0;
+  font-size: 1.5em;
+  z-index: 100;
+  color: #2c3e50;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  
+  
+  
 }
 
 nav a {

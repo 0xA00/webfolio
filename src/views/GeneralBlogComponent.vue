@@ -1,25 +1,7 @@
 <template>
     <suspense>
         <template #fallback>
-            <div class="loader">
-                <div class="loader-inner">
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
-                    </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
-                    </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
-                    </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
-                    </div>
-                    <div class="loader-line-wrap">
-                        <div class="loader-line"></div>
-                    </div>
-                </div>
-            </div>
+             <h1>Waiting for posts ...</h1>
         </template>
 
         <div id="BlogPosts">
@@ -72,10 +54,7 @@ export default {
 
 <style scoped>
 
-@font-face {
-  font-family:'TASADis-Med';
-  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
-}
+
 
 .loader {
     position: absolute;

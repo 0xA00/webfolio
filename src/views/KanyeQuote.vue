@@ -37,4 +37,19 @@
 <style scoped>
 
 
+
+#kanyeQuote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    word-wrap: break-word;
+}
+
+
 </style>

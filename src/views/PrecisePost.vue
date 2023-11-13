@@ -43,28 +43,45 @@ onMounted(async () => {
 <style scoped>
 
 @font-face {
-  font-family:'TASADis-Med';
-  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
+  font-family: "GeistMono";
+  src: url(../font/Geist.Mono/GeistMono-Regular.otf);
 }
 
 @font-face {
-  font-family:'TASADis-Bold';
-  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
+  font-family: "GeistMonoBold";
+  src: url(../font/Geist.Mono/GeistMono-Bold.otf);
 }
+
+
+
+
 
 #POST{
     margin-left: 2%;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    border: 1px solid rgba(0, 0, 0, 0.23);
 }
 
 h1{
-    font-family: "TASADis-Bold",Avenir, Helvetica, Arial, sans-serif;
+    font-family: GeistMonoBold,Avenir, Helvetica, Arial, sans-serif;
+    font-weight: bold;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #005eda;
+  font-size: 3em;
+  padding-left: 2px;
 }
 
 #content{
-    font-family:"TASADis-Med", Avenir, Helvetica, Arial, sans-serif;
+    font-family:GeistMono, Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 color:whitesmoke;
@@ -73,7 +90,7 @@ color:whitesmoke;
 }
 
 h3{
-    font-family: "TASADis-Med",Avenir, Helvetica, Arial, sans-serif;
+    font-family: GeistMono,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #b2beb5;

@@ -26,18 +26,10 @@ date = datsas.date
 
 
 
-@font-face {
-  font-family:'TASADis-Med';
-  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Medium.otf");
-}
 
-@font-face {
-  font-family:'TASADis-Bold';
-  src: local("ElliotSans"), url("../font/orbiter/TASAOrbiterDisplay-Bold.otf");
-}
 
 #title{
-    font-family: TASADis-Bold,Avenir, Helvetica, Arial, sans-serif;
+    font-family: GeistMono,Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -45,7 +37,7 @@ date = datsas.date
 }
 
 #date{
-    font-family: TASADis-Med,Avenir, Helvetica, Arial, sans-serif;
+    font-family: "GeistMono",Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #ffffff;

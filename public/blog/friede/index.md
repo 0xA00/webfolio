@@ -12,7 +12,7 @@ this is another paragraph
 > this is the second paragraph of the blockquote
 
 
-![this is an image](https://0xa0.dev/a/esqueletogrande.gif)
+![this is an image](https://0xa0.dev/a/coincoin.jpg)
 
 --- 
 
