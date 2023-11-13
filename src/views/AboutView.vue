@@ -96,6 +96,7 @@
     margin: 10px;
     padding: 10px;
 
+    font-display: swap;
 }
 
 
@@ -113,7 +114,7 @@
   color: rgba(231, 238, 233, 0.96);
   margin-top: 20px;
   margin-bottom: 20px;
-  
+  font-display: swap;
 }
 
 .about img {

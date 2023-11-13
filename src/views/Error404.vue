@@ -30,6 +30,7 @@ h1, p {
   color: #005eda;
   text-align: center;
   font-size: 3em;
+  font-display: swap;
 }
 
 
@@ -52,6 +53,7 @@ h1, p {
     text-align: center;
     width: 40%;
     margin: auto;
+    font-display: swap;
 }
 
 

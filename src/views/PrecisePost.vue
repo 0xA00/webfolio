@@ -78,6 +78,7 @@ h1{
   color: #005eda;
   font-size: 3em;
   padding-left: 2px;
+  font-display: swap;
 }
 
 #content{
@@ -87,6 +88,7 @@ h1{
 color:whitesmoke;
   margin-left: 2%;
   width: 80%;
+  font-display: swap;
 }
 
 h3{
@@ -95,6 +97,6 @@ h3{
     -moz-osx-font-smoothing: grayscale;
   color: #b2beb5;
   font-size: 1em;
-
+  font-display: swap;
 }
 </style>

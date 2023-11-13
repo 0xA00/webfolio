@@ -16,6 +16,7 @@ h1, p {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  font-display: swap;
 }
 
 p{

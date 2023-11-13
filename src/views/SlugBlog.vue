@@ -29,11 +29,12 @@ date = datsas.date
 
 
 #title{
-    font-family: GeistMono,Avenir, Helvetica, Arial, sans-serif;
+    font-family: "GeistMono",Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   font-size: 2em;
+  font-display: swap;
 }
 
 #date{
@@ -43,6 +44,7 @@ date = datsas.date
   color: #ffffff;
   font-size: 1em;
   margin-top: -15px;
+  font-display: swap;
 }
 
 
