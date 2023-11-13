@@ -4,7 +4,7 @@
   <div class="about">
 
       <div class="card">
-          <img alt="Profile Picture" src="https://0xa0.dev/a/rei.png">
+              <img alt="Profile Picture" src="https://0xa0.dev/a/rei-1.webp">
           <div id="pronounsandUsername">
               <h1>Hi ! I'm AxA0 !</h1>
               <div id="fl">
