@@ -121,7 +121,7 @@
   border-radius: 20%;
   width: 125px;
   height: 125px;
-    margin: 10px;
+  margin: 10px;
 }
 .gridlearned{
     display: grid;
@@ -222,21 +222,15 @@
 </style>
 <script>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import KanyeQuote from "@/views/KanyeQuote.vue";
+
 
 
 export default {
-    components: {KanyeQuote},
+    components: {},
 
   head: function() {
     return {
-      title: "About",
-      meta: [
-          {name:'description', content:'About me'},
-          {name:'twitter:card', content:'summary_large_image'},
-          {name:'twitter:image:src', content:'https://0xa0.dev/a/BNA.png'},
-          {name:'twitter:site', content:'@0xa0_'},
-      ]
+      title: "About"
     };
   }
 };
