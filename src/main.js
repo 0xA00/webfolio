@@ -6,7 +6,6 @@ import { createHead } from '@vueuse/head'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import {faSteam} from "@fortawesome/free-brands-svg-icons";
 import {faDiscord} from "@fortawesome/free-brands-svg-icons";
@@ -14,15 +13,15 @@ import {faJava} from "@fortawesome/free-brands-svg-icons";
 import {faPython} from "@fortawesome/free-brands-svg-icons";
 import {faJs} from "@fortawesome/free-brands-svg-icons";
 import {faVuejs} from "@fortawesome/free-brands-svg-icons";
-import {faC} from "@fortawesome/free-solid-svg-icons";
-import {faMoon} from "@fortawesome/free-solid-svg-icons";
-import {faSun} from "@fortawesome/free-solid-svg-icons";
+import { faC } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
 const head = createHead()
 
-library.add(faTwitter, faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faMoon, faSun)
+library.add(faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faEnvelope)
 
 createApp(App).use(router).use(head).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 

@@ -6,11 +6,11 @@
       <div class="card">
               <img alt="Profile Picture" src="https://0xa0.dev/a/rei-1.webp" rel="preload">
           <div id="pronounsandUsername">
-              <h1>Hi ! I'm AxA0 !</h1>
-              <div id="fl">
+              <h1>Hi ! I'm 0xA0 !</h1>
+            <div id="fl">
                   <img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px">
                   <h2>She/Her</h2>
-                  ️</div>
+            </div>
 
           </div>
 
@@ -31,6 +31,11 @@
                       <span class="ICONS"><font-awesome-icon icon="fa-brands fa-js" /></span>
                       <h2>Javascript</h2>
                  </div>
+                 <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-vuejs" /></span>
+                    <h2>Vue.js</h2>
+                 </div>
+                 
               </div>
         </div>
           <div class="card" id="SaM">
@@ -57,14 +62,19 @@
                   <h2>Discord</h2>
               </div>
                 </a>
-              <div class="grid-item">
-                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-twitter" /></span>
-                  <h2>Twitter</h2>
-              </div>
+                <a href="https://github.com/0xa00" target="_blank">
               <div class="grid-item">
                   <span class="ICONS"><font-awesome-icon icon="fa-brands fa-github" /></span>
                   <h2>Github</h2>
               </div>
+              </a>
+              <a href="#" target="_blank">
+                <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-solid fa-envelope" /></span>
+                <h2>Mail</h2>     
+                </div>
+                     
+              </a>
       </div>
           </div>
   </div>
