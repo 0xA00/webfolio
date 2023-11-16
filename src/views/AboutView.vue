@@ -68,7 +68,7 @@
                   <h2>Github</h2>
               </div>
               </a>
-              <a href="#" target="_blank">
+              <a href="mailto: sarah@0xa0.dev" target="_blank">
                 <div class="grid-item">
                     <span class="ICONS"><font-awesome-icon icon="fa-solid fa-envelope" /></span>
                 <h2>Mail</h2>     
