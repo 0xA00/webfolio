@@ -99,7 +99,7 @@
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 50%;
+    width: 65%;
     margin: auto ;
     padding: 10px;
     text-align: center;

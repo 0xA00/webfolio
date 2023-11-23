@@ -43,10 +43,6 @@ export default {
 
 <style scoped>
 
-#BlogPosts{
-    width: 50%;
-}
-
 #BlogPosts  a {
   display: inline-block;
   padding:40px;

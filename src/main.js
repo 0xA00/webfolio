@@ -15,13 +15,18 @@ import {faJs} from "@fortawesome/free-brands-svg-icons";
 import {faVuejs} from "@fortawesome/free-brands-svg-icons";
 import { faC } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faDocker } from '@fortawesome/free-brands-svg-icons'
+import { faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
+import { faLinux } from '@fortawesome/free-brands-svg-icons'
 
 
 
 
 const head = createHead()
 
-library.add(faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faEnvelope)
+library.add(faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faEnvelope, faDocker, faGitAlt, faHtml5, faCss3Alt, faLinux)
 
 createApp(App).use(router).use(head).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 

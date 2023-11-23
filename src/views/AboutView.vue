@@ -17,7 +17,7 @@
       </div>
       <div id="gridlearnandsab">
           <div class="card" id="grizz">
-              <h1>Language learned</h1>
+              <h1>Languages learned / softwares used</h1>
                 <div class="gridlearned">
                   <div class="grid-item">
                       <span class="ICONS"><font-awesome-icon icon="fa-brands fa-java" /></span>
@@ -35,20 +35,43 @@
                     <span class="ICONS"><font-awesome-icon icon="fa-brands fa-vuejs" /></span>
                     <h2>Vue.js</h2>
                  </div>
+                 <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-docker" /></span>
+                    <h2>Docker</h2>
+                 </div>
+                 <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-git-alt" /></span>
+                    <h2>Git</h2>
+                 </div>
+                 <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-linux" /></span>
+                    <h2>Linux</h2>
+                </div>
+                <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-html5" /></span>
+                    <h2>HTML</h2>
+                </div>
+                <div class="grid-item">
+                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-css3-alt" /></span>
+                    <h2>CSS</h2>
+                </div>
                  
               </div>
         </div>
           <div class="card" id="SaM">
             <h1>Something about me</h1>
-              <p>Hi I'm 0xa0! I'm a 20 years old french student in computer science. I'm currently studying at
+              <p>Hi I'm 0xa0! I'm a {{ years }}  years old french student in computer science. I'm currently studying at
                   <a href="https://iut-montpellier-sete.edu.umontpellier.fr/en/iut-de-montpellier-sete-english/" target="_blank">IUT Montpellier-Sète</a>
                   in Montpellier
               </p>
               <p>
-                  I'm passionate about computer science, especially about low-level programming and security. I'm also interested in web development and I'm currently learning it.
+                  I'm passionate about computer science, especially about low-level programming and security. I'm also learning web development, specifically with Vue.js framework.
               </p>
               <p>
                   I really like to create things on Minecraft as mods,plugins or even redstone contraptions.
+              </p>
+              <p>
+                 One of my main project right now is a file managers using Vue.js and Electron. 
               </p>
           </div>
       </div>
@@ -143,8 +166,6 @@
 .gridlearned{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 10px;
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -227,7 +248,7 @@
 
 .grid-item{
 
-    padding: 10px;
+    
     font-size: 1.5em;
     text-align: center;
 
@@ -247,9 +268,15 @@ export default {
 
   head: function() {
     return {
-      title: "About"
+        title: "About",
+    
     };
-  }
+    },
+    data() {
+        return {
+            years: new Date().getFullYear() - new Date(2002,7,11).getFullYear()
+        }
+    }
 };
 </script>
 
