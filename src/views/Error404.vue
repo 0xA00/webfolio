@@ -1,6 +1,9 @@
 <script setup>
 
+
 import KanyeQuote from "@/views/KanyeQuote.vue";
+
+
 </script>
 
 <template>
@@ -12,12 +15,20 @@ import KanyeQuote from "@/views/KanyeQuote.vue";
       <KanyeQuote></KanyeQuote>
     </Suspense>
 
+
+
   </div>
   
+      
   
 </template>
 
 <style scoped>
+
+
+
+
+
 @font-face {
   font-family: "GeistMono";
   src: url(../font/Geist.Mono/GeistMono-Regular.otf);

@@ -4,6 +4,7 @@ import router from './router'
 import { createHead } from '@vueuse/head'
 
 
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -25,6 +26,7 @@ import { faLinux } from '@fortawesome/free-brands-svg-icons'
 
 
 const head = createHead()
+
 
 library.add(faGithub, faSteam, faDiscord, faJava, faPython, faJs, faVuejs, faC, faEnvelope, faDocker, faGitAlt, faHtml5, faCss3Alt, faLinux)
 

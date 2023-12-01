@@ -7,11 +7,6 @@
               <img alt="Profile Picture" src="https://0xa0.dev/a/rei-1.webp" rel="preload">
           <div id="pronounsandUsername">
               <h1>Hi ! I'm 0xA0 !</h1>
-            <div id="fl">
-                  <img alt="transflag" src="../assets/tf.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px; margin-bottom: -10px">
-                  <h2>She/Her</h2>
-            </div>
-
           </div>
 
       </div>
@@ -20,41 +15,61 @@
               <h1>Languages learned / softwares used</h1>
                 <div class="gridlearned">
                   <div class="grid-item">
-                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-java" /></span>
+                      <img src="https://skillicons.dev/icons?i=java" />
                       <h2>Java</h2>
                   </div>
                   <div class="grid-item">
-                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-python" /></span>
+                      <img src="https://skillicons.dev/icons?i=python" />
                       <h2>Python</h2>
                   </div>
                   <div class="grid-item">
-                      <span class="ICONS"><font-awesome-icon icon="fa-brands fa-js" /></span>
-                      <h2>Javascript</h2>
+                      <img src="https://skillicons.dev/icons?i=js" />
+                      <h2>JS</h2>
                  </div>
                  <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-vuejs" /></span>
-                    <h2>Vue.js</h2>
+                    <img src="https://skillicons.dev/icons?i=vuejs" />
+                    <h2>Vue</h2>
                  </div>
                  <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-docker" /></span>
+                    <img src="https://skillicons.dev/icons?i=docker" />
                     <h2>Docker</h2>
                  </div>
                  <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-git-alt" /></span>
+                    <img src="https://skillicons.dev/icons?i=git" />
                     <h2>Git</h2>
                  </div>
                  <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-linux" /></span>
+                    <img src="https://skillicons.dev/icons?i=linux" />
                     <h2>Linux</h2>
                 </div>
                 <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-html5" /></span>
+                    <img src="https://skillicons.dev/icons?i=html" />
                     <h2>HTML</h2>
                 </div>
                 <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-brands fa-css3-alt" /></span>
+                    <img src="https://skillicons.dev/icons?i=css" />
                     <h2>CSS</h2>
                 </div>
+                <div class="grid-item">
+                    <img src="https://skillicons.dev/icons?i=bash" />
+                    <h2>Bash</h2>
+                </div>
+                <div class="grid-item">
+                    <img src="https://skillicons.dev/icons?i=electron" />
+                    <h2>Electron</h2>
+                </div>  
+                <div class="grid-item">
+                    <img src="https://skillicons.dev/icons?i=c" />
+                    <h2>C</h2>
+                </div>  
+                <div class="grid-item">
+                    <img src="https://skillicons.dev/icons?i=kotlin" />
+                    <h2>Kotlin</h2>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://skillicons.dev/icons?i=vscode" />
+                        <h2>VScode</h2>
+                        </div>
                  
               </div>
         </div>
@@ -81,25 +96,32 @@
           <div class="gridlearned">
             <a href="https://discord.0xa0.dev/" target="_blank">
               <div class="grid-item" >
-                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-discord" /></span>
-                  <h2>Discord</h2>
+                  <img src="https://skillicons.dev/icons?i=discord" />
+                 
               </div>
                 </a>
                 <a href="https://github.com/0xa00" target="_blank">
               <div class="grid-item">
-                  <span class="ICONS"><font-awesome-icon icon="fa-brands fa-github" /></span>
-                  <h2>Github</h2>
+                  <img src="https://skillicons.dev/icons?i=github" />
               </div>
               </a>
-              <a href="mailto: sarah@0xa0.dev" target="_blank">
+              <a href="https://www.linkedin.com/in/florian-pereau-31a8a6194/" target="_blank">
                 <div class="grid-item">
-                    <span class="ICONS"><font-awesome-icon icon="fa-solid fa-envelope" /></span>
-                <h2>Mail</h2>     
+                    <img src="https://skillicons.dev/icons?i=linkedin" />
                 </div>
-                     
+                </a>
+                <a href="https://twitter.com/0xa0_dev" target="_blank">
+                <div class="grid-item">
+                    <img src="https://skillicons.dev/icons?i=twitter" />
+                </div>
+                </a>
+              <a href="mailto: sarah@0xa0.dev" target="_blank">
+                <div class="grid-item" >
+                    <span class="ICONS" ><font-awesome-icon icon="fa-solid fa-envelope" id="mailicon"/></span>
+                </div>
               </a>
       </div>
-          </div>
+    </div>
   </div>
 
 
@@ -114,6 +136,10 @@
 @font-face {
     font-family: "GeistMono";
     src: url(../font/Geist.Mono/GeistMono-Regular.otf);
+}
+
+#mailicon{
+    height:125px;
 }
 
 .gridlearned > a {
@@ -165,7 +191,9 @@
 }
 .gridlearned{
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* create a grid template columns with 4 columns */
+    grid-template-columns: repeat(5, 1fr);
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -247,12 +275,12 @@
  }
 
 .grid-item{
-
-    
     font-size: 1.5em;
     text-align: center;
-
-
+    h2{
+        margin: 0;
+        
+    }
 }
 
 
