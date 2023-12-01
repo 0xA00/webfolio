@@ -66,10 +66,6 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from) =>{
-    document.title = `${to.meta.title}`+' | ' + 'Blog'
 
-
-})
 
 export default router
